@@ -1,0 +1,43 @@
+import sys 
+import os 
+import subprocess 
+import readline 
+import string 
+
+UL17={
+"UL17_tW_NoFullyHadronicDecays":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_tW_NoFullyHadronicDecays/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8/crab_UL17_tW_NoFullyHadronicDecays/220128_101403/0000'], 'mc', 'none', '2017', 'none', '35.85', '41.53', '7991689.01052'],
+"UL17_TTW":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_TTW/TTWJetsToLNu_TuneCP5_PSweights_13TeV-amcatnloFXFX-madspin-pythia8/crab_UL17_TTWJetsToLNu/211106_220653/0000', 'rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_TTW_v9/TTWJetsToLNu_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8/crab_UL17_TTW_v9/220128_101634/0000'], 'mc', 'none', '2017', 'none', '0.2043', '41.53', '6554449.47777'],
+"UL17_DY50":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_DY50/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/crab_UL17_DY50/211203_184109/0000'], 'mc', 'none', '2017', 'none', '6077.22', '41.53', '131552424.895'],
+"UL17_TTTo2L2Nu":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_TTTo2L2Nu/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/crab_UL17_TTTo2L2Nu/211106_220814/0000', 'rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_TTTo2L2Nu_sys_CR1/TTTo2L2Nu_TuneCP5CR1_13TeV-powheg-pythia8/crab_UL17_TTTo2L2Nu_sys_CR1/220118_175141/0000', 'rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_TTTo2L2Nu_sys_CR2/TTTo2L2Nu_TuneCP5CR2_13TeV-powheg-pythia8/crab_UL17_TTTo2L2Nu_sys_CR2/220118_175513/0000', 'rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_TTTo2L2Nu_sys_TuneCP5down/TTTo2L2Nu_TuneCP5down_13TeV-powheg-pythia8/crab_UL17_TTTo2L2Nu_sys_TuneCP5down/220118_175916/0000', 'rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_TTTo2L2Nu_sys_TuneCP5up/TTTo2L2Nu_TuneCP5up_13TeV-powheg-pythia8/crab_UL17_TTTo2L2Nu_sys_TuneCP5up/220118_175645/0000', 'rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_TTTo2L2Nu_sys_erdON/TTTo2L2Nu_TuneCP5_erdON_13TeV-powheg-pythia8/crab_UL17_TTTo2L2Nu_sys_erdON/220118_175025/0000', 'rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_TTTo2L2Nu_sys_hdampDOWN/TTTo2L2Nu_hdampDOWN_TuneCP5_13TeV-powheg-pythia8/crab_UL17_TTTo2L2Nu_sys_hdampDOWN/220118_180032/0000', 'rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_TTTo2L2Nu_sys_hdampUP/TTTo2L2Nu_hdampUP_TuneCP5_13TeV-powheg-pythia8/crab_UL17_TTTo2L2Nu_sys_hdampUP/220118_175801/0000'], 'mc', 'none', '2017', 'none', '87.31', '41.53', '360826533.859'],
+"UL17_tbarW_NoFullyHadronicDecays":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_tbarW_NoFullyHadronicDecays/ST_tW_antitop_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8/crab_UL17_tbarW_NoFullyHadronicDecays/220128_102140/0000'], 'mc', 'none', '2017', 'none', '35.85', '41.53', '6994364.77413'],
+"UL17_DY10to50":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_DY10to50/DYJetsToLL_M-10to50_TuneCP5_13TeV-madgraphMLM-pythia8/crab_UL17_DY10to50/211106_220933/0000', 'rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_DY10to50_v9/DYJetsToLL_M-10to50_TuneCP5_13TeV-madgraphMLM-pythia8/crab_UL17_DY10to50_v9/220128_101519/0000'], 'mc', 'none', '2017', 'none', '18610', '41.53', '132715659.0'],
+"UL17_tbarW_Inclusive":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_tbarW_Inclusive/ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/crab_UL17_tbarW/211106_215449/0000'], 'mc', 'none', '2017', 'none', '35.85', '41.53', '5517710.19165'],
+"UL17_tW_Inclusive":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/UL17_tW_Inclusive/ST_tW_top_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/crab_UL17_tW/211106_221743/0000'], 'mc', 'none', '2017', 'none', '35.85', '41.53', '5668711.86458'],
+
+ 
+"data_UL17_F_DoubleEG":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_F_DoubleEG/DoubleEG/crab_data_UL17_F_DoubleEG/211109_184307/0000'], 'data', 'DoubleEG', '2017', 'F', '1', '41.53', '1'],
+"data_UL17_C_MuonEG":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_C_MuonEG/MuonEG/crab_data_UL17_C_MuonEG/211109_183516/0000'], 'data', 'MuonEG', '2017', 'C', '1', '41.53', '1'],
+"data_UL17_C_DoubleMuon":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_C_DoubleMuon/DoubleMuon/crab_data_UL17_C_DoubleMuon/211217_175254/0000'], 'data', 'DoubleMuon', '2017', 'C', '1', '41.53', '1'],
+"data_UL17_E_DoubleEG":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_E_DoubleEG/DoubleEG/crab_data_UL17_E_DoubleEG/211109_185056/0000'], 'data', 'DoubleEG', '2017', 'E', '1', '41.53', '1'],
+"data_UL17_F_MuonEG":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_F_MuonEG/MuonEG/crab_data_UL17_F_MuonEG/211217_175526/0000'], 'data', 'MuonEG', '2017', 'F', '1', '41.53', '1'],
+"data_UL17_D_DoubleEG":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_D_DoubleEG/DoubleEG/crab_data_UL17_D_DoubleEG/211109_183003/0000'], 'data', 'DoubleEG', '2017', 'D', '1', '41.53', '1'],
+"data_UL17_F_SingleMuon":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_F_SingleMuon/SingleMuon/crab_data_UL17_F_SingleMuon/211217_175410/0000'], 'data', 'SingleMuon', '2017', 'F', '1', '41.53', '1'],
+"data_UL17_B_SingleMuon":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_B_SingleMuon/SingleMuon/crab_data_UL17_B_SingleMuon/211109_183753/0000'], 'data', 'SingleMuon', '2017', 'B', '1', '41.53', '1'],
+"data_UL17_C_SingleElectron":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_C_SingleElectron/SingleElectron/crab_data_UL17_C_SingleElectron/211109_184543/0000'], 'data', 'SingleElectron', '2017', 'C', '1', '41.53', '1'],
+"data_UL17_D_MuonEG":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_D_MuonEG/MuonEG/crab_data_UL17_D_MuonEG/211109_184702/0000'], 'data', 'MuonEG', '2017', 'D', '1', '41.53', '1'],
+"data_UL17_E_SingleElectron":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_E_SingleElectron/SingleElectron/crab_data_UL17_E_SingleElectron/211109_184938/0000'], 'data', 'SingleElectron', '2017', 'E', '1', '41.53', '1'],
+"data_UL17_C_SingleMuon":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_C_SingleMuon/SingleMuon/crab_data_UL17_C_SingleMuon/211217_175756/0000'], 'data', 'SingleMuon', '2017', 'C', '1', '41.53', '1'],
+"data_UL17_E_DoubleMuon":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_E_DoubleMuon/DoubleMuon/crab_data_UL17_E_DoubleMuon/211110_104539/0000'], 'data', 'DoubleMuon', '2017', 'E', '1', '41.53', '1'],
+"data_UL17_B_SingleElectron":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_B_SingleElectron/SingleElectron/crab_data_UL17_B_SingleElectron/211110_104300/0000'], 'data', 'SingleElectron', '2017', 'B', '1', '41.53', '1'],
+"data_UL17_D_DoubleMuon":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_D_DoubleMuon/DoubleMuon/crab_data_UL17_D_DoubleMuon/211109_184425/0000'], 'data', 'DoubleMuon', '2017', 'D', '1', '41.53', '1'],
+"data_UL17_F_DoubleMuon":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_F_DoubleMuon/DoubleMuon/crab_data_UL17_F_DoubleMuon/211109_184820/0000'], 'data', 'DoubleMuon', '2017', 'F', '1', '41.53', '1'],
+"data_UL17_B_DoubleEG":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_B_DoubleEG/DoubleEG/crab_data_UL17_B_DoubleEG/211109_185412/0000'], 'data', 'DoubleEG', '2017', 'B', '1', '41.53', '1'],
+"data_UL17_E_MuonEG":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_E_MuonEG/MuonEG/crab_data_UL17_E_MuonEG/211217_175641/0000'], 'data', 'MuonEG', '2017', 'E', '1', '41.53', '1'],
+"data_UL17_B_MuonEG":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_B_MuonEG/MuonEG/crab_data_UL17_B_MuonEG/211109_183121/0000'], 'data', 'MuonEG', '2017', 'B', '1', '41.53', '1'],
+"data_UL17_C_DoubleEG":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_C_DoubleEG/DoubleEG/crab_data_UL17_C_DoubleEG/211109_183239/0000'], 'data', 'DoubleEG', '2017', 'C', '1', '41.53', '1'],
+"data_UL17_D_SingleMuon":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_D_SingleMuon/SingleMuon/crab_data_UL17_D_SingleMuon/211109_183635/0000'], 'data', 'SingleMuon', '2017', 'D', '1', '41.53', '1'],
+"data_UL17_E_SingleMuon":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_E_SingleMuon/SingleMuon/crab_data_UL17_E_SingleMuon/211109_184030/0000'], 'data', 'SingleMuon', '2017', 'E', '1', '41.53', '1'],
+"data_UL17_B_DoubleMuon":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_B_DoubleMuon/DoubleMuon/crab_data_UL17_B_DoubleMuon/211109_184149/0000'], 'data', 'DoubleMuon', '2017', 'B', '1', '41.53', '1'],
+"data_UL17_D_SingleElectron":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_D_SingleElectron/SingleElectron/crab_data_UL17_D_SingleElectron/211109_185214/0000'], 'data', 'SingleElectron', '2017', 'D', '1', '41.53', '1'],
+"data_UL17_F_SingleElectron":[['rgoldouz/NanoAodPostProcessingUL/UL17/v1/data_UL17_F_SingleElectron/SingleElectron/crab_data_UL17_F_SingleElectron/211217_175912/0000'], 'data', 'SingleElectron', '2017', 'F', '1', '41.53', '1'],
+}

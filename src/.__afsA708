@@ -1,0 +1,1037 @@
+#define MyAnalysis_cxx
+#include "MyAnalysis.h"
+#include "PU_reWeighting.h"
+#include "lepton_candidate.h"
+#include "jet_candidate.h"
+#include "objects.h"
+#include "scalefactor.h"
+#include "histhelper.h"
+#include "TRandom.h"
+#include "TRandom3.h"
+#include "selection.h"
+#include "correction.h"
+#include <TH2.h>
+#include <TStyle.h>
+#include <TCanvas.h>
+#include <TRandom3.h>
+#include <TLorentzVector.h>
+#include <time.h>
+#include <iostream>
+#include <cmath>
+#include <vector>
+#include "RoccoR.h"
+#include "BTagCalibrationStandalone.h"
+#include "WCPoint.h"
+#include "WCFit.h"
+#include "TH1EFT.h"
+#include "utilities.h"
+#include <memory>
+#include <map>
+#include <string>
+#include <algorithm>
+#include <fstream>
+#include <typeinfo>
+#include <fdeep/fdeep.hpp>
+#include "XGBHelper.h"
+/*
+//#include "genLevelAnalysis.h"
+#include <TH2.h>
+#include <TStyle.h>
+#include <TCanvas.h>
+#include "PU_reWeighting.h"
+#include "sumOfWeights.h"
+#include "sumOfWeightsSignal.h"
+#include "TDirectory.h"
+#include <time.h>
+#include <cstdio>
+#include <cmath>
+#include <vector>
+#include "RoccoR.h"
+#include "BTagCalibrationStandalone.h"
+#if not defined(__CINT__) || defined(__MAKECINT__)
+#include "TMVA/Tools.h"
+#include "TMVA/Reader.h"
+#include "TMVA/MethodCuts.h"
+#include "CondFormats/Serialization/interface/Archive.h"
+#include "CondFormats/JetMETObjects/interface/JetCorrectorParameters.h"
+#include "CondFormats/JetMETObjects/interface/JetCorrectionUncertainty.h"
+//#include "Archive.h"
+//#include "JetCorrectorParameters.h"
+//#include "JetCorrectionUncertainty.h"
+#include "GEScaleSyst.h"
+#include "Utils.h"
+#include "WCPoint.h"
+#include "WCFit.h"
+#include "TH1EFT.h"
+#include <map>
+#include "sys/types.h"
+#include "sys/sysinfo.h"
+#include "stdlib.h"
+#include "stdio.h"
+#include "string.h"
+#include <regex>
+#endif
+*/
+using namespace correction;
+
+std::string printEvent(std::vector<lepton_candidate*> *leptons, std::string eventID){
+   std::stringstream s;
+   s << "eventID: " << eventID << endl; 
+   for(auto *l: *leptons){
+      if (l->lep_==1) s <<"e";
+      else s << "mu";
+      if (l->charge_>0) s<< "+";
+      else s << "-";
+
+      s << "\tisPres: " << l->isPresLep_ << "\tisLoose: " << l->isLooseLep_ << "\tisFO: " << l->isFOLep_ << "\tisTight: " << l->isTightLep_ << endl;
+   }
+   return s.str();
+}
+
+std::string printEvent(std::vector<std::vector<int>> *cuts, std::string eventID){
+   std::stringstream s;
+   s<< "eventID: " << eventID << endl;
+
+   for (auto l: *cuts){
+      if (!l[4]) continue; // if not loose continue;
+      if(l[0]==1) {
+         s<<"e" << ((l[1]>0)?"+":"-")<< ": ";
+         s << "btag: "<< l[5] << "\tptReq: " << l[6] << "\tqualityReq: " << l[7] << "\tmvaReq: "<<l[8] << "\ttightCharge: "<<l[9] << "\ttightSel: " << l[10] <<endl;
+      }
+      else {
+         s<<"mu" <<( (l[1]>0)?"+":"-")<< ": ";
+         s<< "btag: "<< l[5] << "\tptReq: " << l[6] << "\tmvaReq: "<<l[7] <<  "\ttightSel: " << l[8] <<endl;
+      }
+   }
+
+   return s.str();
+}
+
+bool isInList(std::string id) {
+   std::string l[]={
+      "297722:132:160939414",
+      "297603:291:527055163",
+      "299061:119:126427408",
+      "297425:111:177737176",
+      "297605:22:37641832",
+      "299180:19:25209952",
+      "297486:60:102246253",
+      "297431:156:278746246",
+      "299067:91:112406026",
+      "297486:112:189289012",
+      "299185:71:109175463",
+      "297562:160:265702053",
+      "297660:12:19100791",
+      "297050:520:629564608",
+      "299327:35:51257907",
+      "297722:109:119504154",
+      "298996:190:195967548",
+      "297485:190:322518888",
+      "297411:606:1004768065",
+      "297411:55:38743428",
+      "297485:74:129428827",
+      "297503:493:905075117",
+      "299000:22:14541904",
+      "298997:27:12720341",
+      "297675:339:579882978",
+      "297503:257:468450032",
+      "299062:105:178036210",
+      "297219:2363:3277100857",
+      "297503:426:779988413",
+      "299067:182:229427903",
+      "297620:99:113128593",
+      "297674:41:66028997",
+      "297557:130:207542131",
+      "297486:177:298079873",
+      "297431:127:228591970",
+      "297057:845:976235413",
+      "299178:64:28503635",
+      "299149:110:115877420",
+      "299318:16:28068529",
+      "297604:332:534832495",
+      "297225:17:13133147",
+      "299329:40:68594856",
+      "297467:119:179043561",
+      "297425:18:27952569"
+   };
+
+   for(int i=0; i<44; i++){
+      if (l[i]==id) return true;
+   }
+   return false;
+   
+}
+
+void displayProgress(long current, long max){
+  using std::cerr;
+  if (max<500) return;
+  if (current%(max/500)!=0 && current<max-1) return;
+
+  int width = 52; // Hope the terminal is at least that wide.
+  int barWidth = width - 2;
+  cerr << "\x1B[2K"; // Clear line
+  cerr << "\x1B[2000D"; // Cursor left
+  cerr << '[';
+  for(int i=0 ; i<barWidth ; ++i){ if(i<barWidth*current/max){ cerr << '=' ; }else{ cerr << ' ' ; } }
+  cerr << ']';
+  cerr << " " << Form("%8d/%8d (%5.2f%%)", (int)current, (int)max, 100.0*current/max) ;
+  cerr.flush();
+}
+
+bool ComparePtLep(lepton_candidate *a, lepton_candidate *b) { 
+   return a->pt_ > b->pt_; 
+}
+
+bool ComparePtJet(jet_candidate *a, jet_candidate *b) {
+   return a->pt_ > b->pt_;
+}
+
+bool isBJet(jet_candidate *j) {
+   return (bool) j->btag_;
+}
+
+int vInd(std::map<TString, std::vector<float>> V, TString name){
+  return V.find(name)->second.at(0);
+}
+
+int getIndex(vector<TString> v, TString K)
+{  
+   auto it = find(v.begin(), v.end(), K);
+   return (it != v.end()) ? it - v.begin() : -1;
+}
+
+Double_t deltaPhi(Double_t phi1, Double_t phi2) {
+  Double_t dPhi = phi1 - phi2;
+  if (dPhi > TMath::Pi()) dPhi -= 2.*TMath::Pi();
+  if (dPhi < -TMath::Pi()) dPhi += 2.*TMath::Pi();
+  return dPhi;
+}
+
+
+Double_t deltaR(Double_t eta1, Double_t phi1, Double_t eta2, Double_t phi2) {
+  Double_t dEta, dPhi ;
+  dEta = eta1 - eta2;
+  dPhi = deltaPhi(phi1, phi2);
+  return sqrt(dEta*dEta+dPhi*dPhi);
+}
+
+//Int_t GenPartMotherPDGID(Int_t i) { // i is the gen part idx of the particle
+//   return GenPart_pdgId[GenPart_genPartIdxMother[i]];
+//}
+
+//void MyAnalysis::Loop(TString fname, TString data, TString dataset ,TString year, TString run, float xs, float lumi, float Nevent, int iseft, int nRuns)
+void MyAnalysis::Loop(TString fname, TString data, TString dataset ,string year, TString runTemp, float xs, float lumi, float Nevent, int iseft, int nRuns)
+{
+   ofstream fout;
+   fout.open("fout.txt");
+   
+   Bool_t isSignal;
+   Float_t weights[12];
+   Float_t lep1Pt;
+   Float_t lep1Eta;
+   Float_t lep1Phi;
+   Float_t lep2Pt;
+   Float_t lep2Eta;
+   Float_t lep2Phi;
+   Float_t llM;
+   Float_t llPt;
+   Float_t llDr;
+   Float_t llDphi;
+   Int_t njet;
+   Int_t nbjet;
+   Float_t Met;
+   Float_t MetPhi;
+   Int_t nVtx;
+   Float_t jet1Pt;
+   Float_t jet1Phi;
+   Float_t jet1Eta;
+   Int_t channel;
+   Int_t dset;
+
+//   TBranch *b_weights;
+
+   TFile *f = new TFile("ANoutput.root","RECREATE");
+   TTree *t1= new TTree("t1", "t1");
+   t1->Branch("isSignal", &isSignal, "isSignal/O");
+   t1->Branch("lep1Pt", &lep1Pt, "lep1Pt/F");
+   t1->Branch("lep1Eta", &lep1Eta, "lep1Eta/F");
+   t1->Branch("lep1Phi", &lep1Phi, "lep1Phi/F");
+   t1->Branch("lep2Pt", &lep2Pt, "lep2Pt/F");
+   t1->Branch("lep2Eta", &lep2Eta, "lep2Eta/F");
+   t1->Branch("lep2Phi", &lep2Phi, "lep2Phi/F");
+   t1->Branch("jet1Pt", &jet1Pt, "jet1Pt/F");
+   t1->Branch("jet1Eta", &jet1Eta, "jet1Eta/F");
+   t1->Branch("jet1Phi", &jet1Phi, "jet1Phi/F");
+   t1->Branch("llM", &llM, "llM/F");
+   t1->Branch("llPt", &llPt, "llPt/F");
+   t1->Branch("llDr", &llDr, "llDr/F");
+   t1->Branch("llDphi", &llDphi, "llDphi/F");
+   t1->Branch("Met", &Met, "Met/F");
+   t1->Branch("MetPhi", &MetPhi, "MetPhi/F");
+   t1->Branch("njet", &njet, "njet/I");
+   t1->Branch("nbjet", &nbjet, "nbjet/I");
+   t1->Branch("nVtx", &nVtx, "nVtx/I");
+   t1->Branch("channel", &channel, "channel/I");
+   t1->Branch("weights", weights, "weights[12]/F");
+   t1->Branch("dataset", &dset, "dataset/I");
+
+   std::map<TString,int> DataSets {
+      {"UL17_ZGToLLG",                  0       },
+      {"UL17_ST_top_t_channel",         1       },
+      {"UL17_ttHnobb",                  2       },
+      {"UL17_tbarW",                    3       },
+      {"UL17_WZZ",                      4       },
+      {"UL17_TTGamma_Dilept",           5       },
+      {"UL17_DY50",                     6       },
+      {"UL17_WWZ_4F",                   7       },
+      {"UL17_ZZTo4L",                   8       },
+      {"UL17_TTTo2L2Nu",                9       },
+      {"UL17_WJetsToLNu",               10      },
+      {"UL17_TTWJetsToLNu",             11      },
+      {"UL17_tZq",                      12      },
+      {"UL17_TTToSemiLeptonic",         13      },
+      {"UL17_TTGamma_SingleLept",       14      },
+      {"UL17_TTZToLLNuNu_M_10",         15      },
+      {"UL17_DY10to50",                 16      },
+      {"UL17_ZZZ",                      17      },
+      {"UL17_tW",                       18      },
+      {"UL17_WWTo2L2Nu",                19      },
+      {"UL17_WWW_4F",                   20      },
+      {"UL17_ST_antitop_t_channel",     21      },
+      {"UL17_tttt",                     22      },
+      {"UL17_ST_top_s_channel",         23      },
+      {"UL17_WZTo3LNu",                 24      },
+   };
+
+
+
+
+   TString tempData = data;
+   cout << "Hello world" << endl;
+//   TFile *f = new TFile("ANoutput.root","RECREATE");
+//   TFile *g = new TFile("CutTable.root", "RECREATE");
+//   f->cd();
+//   if (!f) { 
+//      cout << "file not opened" << endl;
+//      exit(1);
+//   }
+//   else cout << "ANoutput opened" << endl;
+
+//   ofstream fout;
+//   fout.open ("fout.txt");
+
+//   std::vector<TString> regions{"llonZ", "lloffZ"};
+//   std::vector<TString> channels{"eeos", "eess+", "eess-", "emuos", "emuss+", "emuss-", "mumuos", "mumuss+", "mumuss-"};
+   std::vector<TString> channels{
+//      "EpEm", "EpmMUmp", "MUpMUm", 
+      "LLpp", "LLmm", //"LFpp", "LFmm", "FFpp", "FFmm",
+      "3LonZ", "3LoffZp", "3LoffZm","4L",
+//      "LLFonZ", "LFFonZ","FFFonZ",
+//      "LLFoffZp", "LFFoffZp","FFFoffZp",
+//      "LLFoffZm", "LFFoffZm","FFFoffZm"
+   };
+      
+   std::vector<TString> regions{"0Bjet","1Bjet", "G1Bjet", "All"};
+   const std::map<TString, std::vector<float>> vars = 
+   {
+      {"lep1Pt",      	       	  	{0, 	60, 	0, 	300	}},
+      {"lep1Eta",            	 	{1, 	20,    -3, 	3	}},
+      {"lep1Phi",			{2, 	25,    -4, 	4	}},
+      {"lep2Pt",                        {3,     25,     0,      1000    }},
+      {"lep2Eta",                       {4,     20,    -3,      3       }},
+      {"lep2Phi",                       {5,     25,    -4,      4       }},
+      {"llM",                           {6,     30,     0, 	500 	}},
+      {"llPt",                          {7,     20,     0, 	200 	}},
+      {"llDr",                          {8,     25,     0, 	7   	}},
+      {"llDphi",                        {9,     15,     0, 	4   	}},
+      {"jet1Pt",                        {10,    20,     0, 	300 	}},
+      {"jet1Eta",                       {11,    20,    -3, 	3  	}},
+      {"jet1Phi",                       {12,    25,    -4, 	4  	}},
+      {"njet",                          {13,    10,     0, 	10  	}},
+      {"nbjet",                         {14,     6,     0, 	6   	}},
+      {"Met",                           {15,    30,     0, 	210 	}},
+      {"MetPhi",                        {16,    20,    -4, 	4  	}},
+      {"nVtx",                          {17,    70,     0, 	70  	}},
+      {"llMZw",                         {18,    80,    70, 	110	}},
+      {"BDToutput_ctp",                 {19,    40,     0,      1       }},
+      {"BDToutput_ctlS",                {20,    40,     0,      1       }},
+      {"BDToutput_cte",                 {21,    40,     0,      1       }},
+      {"BDToutput_ctl",                 {22,    40,     0,      1       }},
+      {"BDToutput_ctlT",                {23,    40,     0,      1       }},
+      {"BDToutput_ctZ",                 {24,    40,     0,      1       }},
+      {"BDToutput_cpt",                 {25,    40,     0,      1       }},
+      {"BDToutput_cpQM",                {26,    40,     0,      1       }},
+      {"BDToutput_ctA",                 {27,    40,     0,      1       }},
+      {"BDToutput_cQe",                 {28,    40,     0,      1       }},
+      {"BDToutput_ctG",                 {29,    40,     0,      1       }},
+      {"BDToutput_cQlM",                {30,    40,     0,      1       }},
+
+   };
+
+   const std::map<TString, std::vector<float>> var_llm = 
+   {
+      {"llM",                           {0,     30,     0,      500     }},
+   };
+
+//   std::vector<TString> regions_2l_fakes {"ll", "lf", "ff"};
+//   Dim4 Hists_2l_fakes = makeHists(regions_2l_fakes, channels, regions, vars);
+   Dim3EFT Hists = makeHistsEFT(channels, regions, vars);
+   
+   std::vector<string> wc_names_lst={};
+   std::vector<string> wc_names_lst_FCNC={"ctp","ctlS","cte","ctl","ctlT","ctZ","cpt","cpQM","ctA","cQe","ctG","cQlM"};
+   std::vector<TString> wc_names={"ctp","ctlS","cte","ctl","ctlT","ctZ","cpt","cpQM","ctA","cQe","ctG","cQlM"};
+  if (fname.Contains("FCNC")) wc_names_lst = wc_names_lst_FCNC;
+
+   Dim2EFT Hist_wc = makeHistsEFT(wc_names, var_llm);
+
+
+   std::vector<string> channels_{"LLpp", "LLmm", "3Lonz", "3LoffZp", "3LoffZm","4L"};
+   std::vector<string> regions{"0Bjet","1Bjet", "G1Bjet"};
+   
+
+
+   MultiXGB XGBModels = loadModels(channels_, regions_, wc_names, "/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/bin/savedjson/");
+
+
+   // set up  utput file
+   //
+   // declare lepton candidate vectors -- 
+   std::vector<lepton_candidate*> *selectedLeptons;
+   std::vector<jet_candidate*> *selectedJets;
+   std::vector<std::vector<int>> *leptonCuts;
+   WCFit *eft_fit;
+
+   // declare triggers and other variable
+   bool oppositeSign;
+   bool sameSign;
+   int onZ;
+   Float_t pt, phi, eta, mll;
+   Int_t lep1, lep2;
+   int ch;
+   TString cat;
+   Double_t weight, weight_EFT;
+   bool cleanJet;
+   Int_t ind;
+   Double_t mass, btag;
+   // 3l triggers
+   bool triggerPass3l;
+   bool triggerPass3l_exclude;
+   Float_t conept, jetBtagDeepFlav;
+   bool idEmu, isPres, isLoose, isFO, isTight;
+   int eCuts[5], muCuts[4], ttHCuts[3];
+   bool print = false;
+   float sumWeight=0;
+   int numEpEm=0;
+   RoccoR rc;
+   string rochesterFile;
+   double muPtSFRochester = 1;
+   string eleSF, muSF, bSF;
+   TString fName;
+   float eleNominalWeight=1.0, muNominalWeight=1.0;
+
+   // Open Data Files
+   TString fakeFactorFile = "/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/data/fr_2017_recorrected.root";
+   ScaleFactor *mu_sf = new ScaleFactor(fakeFactorFile, "FR_mva085_mu_data_comb_recorrected", "2017");
+   ScaleFactor *ele_sf = new ScaleFactor(fakeFactorFile, "FR_mva090_el_data_comb_NC_recorrected", "2017");
+
+   // scale factors
+   if (year == "2017") {
+      rochesterFile = "/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/data/RoccoR2017UL.txt";
+      eleSF="/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/data/POG/EGM/2017_UL/electron.json.gz";
+      muSF= "/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/data/POG/MUO/2017_UL/muon_Z.json.gz";
+      bSF="/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/data/POG/BTV/2017_UL/btagging.json.gz"; 
+   }
+   rc.init(rochesterFile);
+   auto csetFileEleSF = CorrectionSet::from_file(eleSF);
+   auto csetEleIdReco = csetFileEleSF->at("UL-Electron-ID-SF");
+
+   auto csetFileMuSF = CorrectionSet::from_file(muSF);  
+   auto csetMuReco = csetFileMuSF->at("NUM_TrackerMuons_DEN_genTracks");
+   auto csetMuLoose = csetFileMuSF->at("NUM_LooseID_DEN_TrackerMuons");
+
+   auto csetFilebSF = CorrectionSet::from_file(bSF);
+   auto csetLightJetSF = csetFilebSF->at("deepJet_incl");
+   auto csetBcJetSF = csetFilebSF->at("deepJet_comb");    
+
+   std::vector<TString> fNameEleSF{
+      "/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/data/topCoffeaData/leptonSF/elec/egammaEffi" + year + "_recoToloose_EGM2D.root",
+      "/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/data/topCoffeaData/leptonSF/elec/egammaEffi" + year + "_iso_EGM2D.root",
+      "/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/data/topCoffeaData/leptonSF/elec/egammaEffi" + year + "_3l_EGM2D.root"
+   };
+
+   std::vector<TString> fNameMuSF{
+      "/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/data/topCoffeaData/leptonSF/muon/egammaEffi" + year + "_EGM2D.root",
+      "/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/data/topCoffeaData/leptonSF/muon/egammaEffi" + year + "_iso_EGM2D.root"
+   };
+   TString fNamebSF = "/afs/crc.nd.edu/user/h/hyockey/FCNC/postLHE_analysis/data/btagEff.root"; 
+   std::vector<ScaleFactor*> *eleNominalSF = new std::vector<ScaleFactor*>();
+   std::vector<ScaleFactor*> *muNominalSF = new std::vector<ScaleFactor*>();
+   
+   ScaleFactor *btagEff_b_H, *btagEff_c_H, *btagEff_udsg_H;
+
+   if (data=="mc") {
+      for (auto fName : fNameEleSF) {
+         eleNominalSF->push_back(new ScaleFactor(fName, "EGamma_SF2D", year));
+      }
+      for (auto fName : fNameMuSF) {
+         muNominalSF->push_back(new ScaleFactor(fName, "EGamma_SF2D", year));
+      }
+      btagEff_b_H = new ScaleFactor(fNamebSF, year+"_h2_BTaggingEff_b", year);
+      btagEff_c_H = new ScaleFactor(fNamebSF, year+"_h2_BTaggingEff_c", year);
+      btagEff_udsg_H = new ScaleFactor(fNamebSF, year+"_h2_BTaggingEff_udsg", year);
+      
+   }
+
+
+   if (fChain == 0) return;
+   Long64_t nentries = fChain->GetEntriesFast();
+
+   Long64_t nbytes = 0, nb = 0;
+   string eventID;
+
+   float sfsum = 0;
+   float sum =0;
+   int k=0;
+   for (Long64_t jentry=0; jentry<nentries;jentry++) {
+      data = tempData;
+
+//   for (Long64_t jentry=0; jentry<1000;jentry++) {
+      if (jentry%10000==0) cout << jentry << " events processed" << endl;
+      Long64_t ientry = LoadTree(jentry);
+      if (ientry < 0) break;
+      nb = fChain->GetEntry(jentry);   nbytes += nb;
+    //  displayProgress(jentry,ntr);
+      eventID = to_string(run)+":"+to_string(luminosityBlock)+":"+to_string(event);
+      print = false;
+      if(print) cout << eventID << endl;
+      weight = 1;
+      if (data == "mc") weight = ((1000*xs*lumi)/Nevent)*((genWeight>0)?1:-1);
+
+      // initialize variables
+      // trigger pass for each channel
+      oppositeSign = false;
+      sameSign = false;
+      triggerPass3l = false;
+      triggerPass3l_exclude = false;
+/***********************************************
+ *   Data triggers using topcoffea approach 
+ ***********************************************/
+      Bool_t triggers_2017_SingleMuon[] = {
+	 HLT_IsoMu24,
+	 HLT_IsoMu27
+      };
+
+      Bool_t triggers_2017_SingleElectron[] = {
+	 HLT_Ele35_WPTight_Gsf,
+	 HLT_Ele32_WPTight_Gsf_L1DoubleEG
+      };
+
+      Bool_t triggers_2017_DoubleMuon[] = {
+	 HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ,
+         HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8,
+         HLT_TripleMu_12_10_5
+      };
+
+      Bool_t triggers_2017_DoubleEG[] = {
+	 HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL,
+	 HLT_Ele16_Ele12_Ele8_CaloIdL_TrackIdL
+//         HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ,
+      };
+
+      Bool_t triggers_2017_MuonEG[] = {
+	 HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL,
+         HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ,
+         HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ,
+         HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ,
+         HLT_Mu8_DiEle12_CaloIdL_TrackIdL,
+         HLT_Mu8_DiEle12_CaloIdL_TrackIdL_DZ,
+         HLT_DiMu9_Ele9_CaloIdL_TrackIdL_DZ,
+      };
+
+
+      //exclude nothing
+      Bool_t triggers_2017_SingleMuon_exclude[] = {};
+      
+      //exclude single muon triggers
+      Bool_t triggers_2017_SingleElectron_exclude[] = {
+         HLT_IsoMu24,
+         HLT_IsoMu27
+      }; 
+
+      //exclude single muon + single electron triggers
+      Bool_t triggers_2017_DoubleMuon_exclude[] = {
+         HLT_IsoMu24,
+         HLT_IsoMu27,
+         HLT_Ele35_WPTight_Gsf,
+	 HLT_Ele32_WPTight_Gsf_L1DoubleEG
+      };
+
+      //exclude single muon + single electron + DoubleMuon triggers
+      Bool_t triggers_2017_DoubleEG_exclude[] = {
+         HLT_IsoMu24,
+         HLT_IsoMu27,
+         HLT_Ele35_WPTight_Gsf,
+	 HLT_Ele32_WPTight_Gsf_L1DoubleEG,
+         HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ,
+         HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8,
+         HLT_TripleMu_12_10_5
+      };
+
+      //exclude single muon + single electron + DoubleMuon + DoubleEG triggers
+      Bool_t triggers_2017_MuonEG_exclude[] = {
+         HLT_IsoMu24,
+         HLT_IsoMu27,
+         HLT_Ele35_WPTight_Gsf,
+	 HLT_Ele32_WPTight_Gsf_L1DoubleEG,
+         HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ,
+         HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8,
+         HLT_TripleMu_12_10_5,
+         HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL,
+//         HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ,
+         HLT_Ele16_Ele12_Ele8_CaloIdL_TrackIdL
+      };
+
+      Bool_t triggers_2017_all[] = {
+         HLT_IsoMu24,
+         HLT_IsoMu27,
+         HLT_Ele35_WPTight_Gsf,
+	 HLT_Ele32_WPTight_Gsf_L1DoubleEG,
+         HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ,
+         HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_Mass3p8,
+         HLT_TripleMu_12_10_5,
+         HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL,
+//         HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ,
+         HLT_Ele16_Ele12_Ele8_CaloIdL_TrackIdL,
+         HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL,
+         HLT_Mu23_TrkIsoVVL_Ele12_CaloIdL_TrackIdL_IsoVL_DZ,
+         HLT_Mu12_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ,
+         HLT_Mu8_TrkIsoVVL_Ele23_CaloIdL_TrackIdL_IsoVL_DZ,
+         HLT_Mu8_DiEle12_CaloIdL_TrackIdL,
+         HLT_Mu8_DiEle12_CaloIdL_TrackIdL_DZ,
+         HLT_DiMu9_Ele9_CaloIdL_TrackIdL_DZ,
+      };
+
+
+      if (print) {
+ //	 cout << "all triggers" << endl;
+	 for (int i=0; i<16; i++) cout << triggers_2017_all[i] << " ";
+	 cout << endl;
+      }
+
+      if (data=="mc") {
+	 if (year=="2017") {
+	    for (int i=0; i<16; i++) {
+	       triggerPass3l = triggerPass3l || triggers_2017_all[i];
+	    }
+	 }
+      }
+      
+      if (data=="data") {
+	 if (year=="2017") {
+	    if (dataset=="SingleMuon") {
+	       for (int i=0; i<2;i++) {
+                  triggerPass3l = triggerPass3l || triggers_2017_SingleMuon[i];
+               }
+               for (int i=0; i<0; i++) {
+                  triggerPass3l_exclude = triggerPass3l_exclude || triggers_2017_SingleMuon_exclude[i];
+               }
+	       triggerPass3l = triggerPass3l && !triggerPass3l_exclude;
+	    }
+            if (dataset=="SingleElectron") {
+               for (int i=0; i<2; i++) {
+                  triggerPass3l = triggerPass3l || triggers_2017_SingleElectron[i];
+               }
+               for (int i=0; i<2; i++) {
+                  triggerPass3l_exclude = triggerPass3l_exclude || triggers_2017_SingleElectron_exclude[i];
+               }
+               triggerPass3l = triggerPass3l && !triggerPass3l_exclude;
+            }
+            if (dataset=="DoubleMuon") {
+               for (int i=0; i<3; i++) {
+                  triggerPass3l = triggerPass3l || triggers_2017_DoubleMuon[i];
+               }
+               for (int i=0; i<4; i++) {
+                  triggerPass3l_exclude = triggerPass3l_exclude || triggers_2017_DoubleMuon_exclude[i];
+               }
+               triggerPass3l = triggerPass3l && !triggerPass3l_exclude;
+	    }
+            if (dataset=="DoubleEG") {
+               for (int i=0; i<2; i++) {
+                  triggerPass3l = triggerPass3l || triggers_2017_DoubleEG[i];
+               }
+               for (int i=0; i<7; i++) {
+                  triggerPass3l_exclude = (triggerPass3l_exclude || triggers_2017_DoubleEG_exclude[i]);
+               }
+	       
+               triggerPass3l = triggerPass3l && !triggerPass3l_exclude;
+            }
+            if (dataset=="MuonEG") {
+               for (int i=0; i<7; i++) {
+                  triggerPass3l = triggerPass3l || triggers_2017_MuonEG[i];
+               }
+               for (int i=0; i<9; i++) {
+                  triggerPass3l_exclude = triggerPass3l_exclude || triggers_2017_MuonEG_exclude[i];
+               }
+               triggerPass3l = triggerPass3l && !triggerPass3l_exclude;
+            }
+	 }	 	 
+      }
+      if (!triggerPass3l) continue;
+
+
+//      cout << "Trigger passed" << endl;
+/*******************************************************************************************/
+      // initialize candidate vectors
+      selectedLeptons = new std::vector<lepton_candidate*>();
+      selectedJets = new std::vector<jet_candidate*>();
+      leptonCuts = new std::vector<std::vector<int>>();
+      // if criteria is passed, add electrons to appropriate vector(s)
+      int nTight = 0;
+      int nFake = 0;
+      float eleNominalWeight = 1.0;
+      float muNominalWeight = 1.0; 
+      bool isWellMeasured;
+      bool eCuts[8];
+      for (int i=0; i<nElectron; i++) {
+	 conept = coneptElec(Electron_pt[i], Electron_mvaTTHUL[i], Electron_jetRelIso[i]);
+	 jetBtagDeepFlav = (Electron_jetIdx[i]==-1) ? -99 : Jet_btagDeepFlavB[Electron_jetIdx[i]];
+	 idEmu = ttH_idEmu_cuts_E3(
+	    ttHCuts, Electron_hoe[i], Electron_eta[i], Electron_deltaEtaSC[i], 
+	    Electron_eInvMinusPInv[i], Electron_sieie[i]
+	 );
+	 isPres = isPresElec(
+	    Electron_pt[i], Electron_eta[i], Electron_dxy[i], Electron_dz[i],
+	    Electron_miniPFRelIso_all[i], Electron_sip3d[i], Electron_mvaFall17V2noIso_WPL[i]
+	 );
+	 isLoose = isLooseElec(
+	    Electron_miniPFRelIso_all[i], Electron_sip3d[i], Electron_lostHits[i]
+	 ) && isPres;
+	 isFO = isFOElec(
+	    Electron_pt[i], conept, jetBtagDeepFlav, idEmu, Electron_convVeto[i],
+	    Electron_lostHits[i], Electron_mvaTTHUL[i], Electron_jetRelIso[i],
+	    Electron_mvaFall17V2noIso_WP90[i], year
+	 ) && Electron_tightCharge[i]==2 && isLoose;
+	 isTight = tightSelElec(isFO, Electron_mvaTTHUL[i]) && isLoose;
+
+         electronCuts(eCuts, Electron_pt[i], conept, jetBtagDeepFlav, idEmu, Electron_convVeto[i],
+            Electron_lostHits[i], Electron_mvaTTHUL[i], Electron_jetRelIso[i],
+            Electron_mvaFall17V2noIso_WP90[i], isPres, isLoose, Electron_tightCharge[i], year); 
+
+         std::vector<int> cuts = electronCuts(i, Electron_charge[i], Electron_pt[i], conept, jetBtagDeepFlav, idEmu, Electron_convVeto[i],
+            Electron_lostHits[i], Electron_mvaTTHUL[i], Electron_jetRelIso[i],
+            Electron_mvaFall17V2noIso_WP90[i], isPres, isLoose, Electron_tightCharge[i], year);
+         leptonCuts->push_back(cuts);
+
+	 if(!(isFO || isTight)) continue;
+         if (data=="mc" && isTight && Electron_genPartFlav[i]==0) continue;
+         if (isTight) { nTight++; if (print) cout << "tight electron" << endl;}
+	 if (isFO && !(isTight)) {nFake++; if (print) cout << "fo electron" << endl;}
+	 selectedLeptons->push_back(
+	    new lepton_candidate(
+	       Electron_pt[i], Electron_eta[i], Electron_phi[i], Electron_charge[i],
+	        i, 1, isPres, isLoose, isFO, isTight, 2.0
+	    )
+	 );
+         if (!isTight) continue;
+         if (!(data=="mc"&& Electron_pt[i]>10)) continue;
+         eleNominalWeight*=csetEleIdReco->evaluate({year, "sf", (Electron_pt[i]>20?"RecoAbove20":"RecoBelow20"), Electron_eta[i],Electron_pt[i]});
+         for (ScaleFactor* sf : *eleNominalSF) eleNominalWeight*=sf->getScaleFactor(abs(Electron_eta[i]), Electron_pt[i]);
+      }
+
+      // If criteria is passed, add muons to appropriate vector
+      double RoccorPt;  
+      for (int i=0; i<nMuon; i++) {
+         muPtSFRochester=1;
+         if(data == "data" && Muon_pt[i]>20 && abs(Muon_eta[i])<2.4) muPtSFRochester = rc.kScaleDT(Muon_charge[i], Muon_pt[i],Muon_eta[i],Muon_phi[i], 0, 0);
+         if (data == "mc" && Muon_pt[i]>20 && abs(Muon_eta[i])<2.4){
+            if (Muon_genPartIdx[i]>=0 && Muon_genPartIdx[i]<=nGenPart) muPtSFRochester = rc.kSpreadMC(Muon_charge[i], Muon_pt[i],Muon_eta[i],Muon_phi[i], GenPart_pt[Muon_genPartIdx[i]],0, 0);
+            if (Muon_genPartIdx[i]<0) muPtSFRochester = rc.kSmearMC(Muon_charge[i], Muon_pt[i],Muon_eta[i],Muon_phi[i], Muon_nTrackerLayers[i] , gRandom->Rndm(),0, 0);
+         }
+         RoccorPt = Muon_pt[i]*muPtSFRochester;
+	 conept = coneptMuon(RoccorPt, Muon_mvaTTHUL[i], Muon_jetRelIso[i], Muon_mediumId[i]);
+	 jetBtagDeepFlav = (Muon_jetIdx[i]<0) ? -99 : Jet_btagDeepFlavB[Muon_jetIdx[i]]; 
+	 isPres = isPresMuon(
+	    RoccorPt, Muon_eta[i], Muon_dxy[i], Muon_dz[i], Muon_miniPFRelIso_all[i], Muon_sip3d[i]
+	 ); // Muon pt rochester corrections?
+	 isLoose = isLooseMuon(
+	    Muon_miniPFRelIso_all[i], Muon_sip3d[i], Muon_looseId[i]
+	 ) && isPres;
+	 isFO = isFOMuon(
+	    RoccorPt, conept, jetBtagDeepFlav, Muon_mvaTTHUL[i], Muon_jetRelIso[i], year
+	 ) && isLoose;
+	 isTight = tightSelMuon(
+	    isFO, Muon_mediumId[i], Muon_mvaTTHUL[i]
+	 ) && isLoose;
+	 muonCuts(muCuts, RoccorPt, conept, jetBtagDeepFlav, Muon_mvaTTHUL[i], Muon_jetRelIso[i], year, Muon_mediumId[i]);
+         std::vector<int> cuts = muonCuts(i, Muon_charge[i], RoccorPt, conept, jetBtagDeepFlav, Muon_mvaTTHUL[i], Muon_jetRelIso[i], isPres, isLoose, year, Muon_mediumId[i]);
+         leptonCuts->push_back(cuts);
+	 if (!(isFO || isTight)) continue;
+         if (data=="mc" && isTight && Muon_genPartFlav[i]==0) continue;
+         if (isTight) { nTight++;if (print)cout << "tight muon" << endl;}
+         if (isFO && !isTight){ nFake++; if (print) cout << "fo muon" << endl;}
+         selectedLeptons->push_back(
+	    new lepton_candidate(
+	       RoccorPt, Muon_eta[i], Muon_phi[i], Muon_charge[i],
+ 	       i, 10, isPres, isLoose, isFO, isTight, 2.0
+	    )
+	 );
+         if (!(isTight)) continue;
+         if (!(data=="mc" && RoccorPt > 15)) continue;
+         muNominalWeight *= csetMuReco->evaluate({year + "_UL", abs(Muon_eta[i]),  RoccorPt, "sf"});
+         muNominalWeight *= csetMuLoose->evaluate({year + "_UL", abs(Muon_eta[i]),  RoccorPt, "sf"});
+         for (ScaleFactor* sf : *muNominalSF) muNominalWeight*=sf->getScaleFactor(abs(Muon_eta[i]), RoccorPt);
+      }
+
+      for (int i=0; i<nJet; i++) {
+         pt = Jet_pt[i];
+         eta = Jet_eta[i];
+         phi = Jet_phi[i];
+         mass = Jet_mass[i];
+         btag = Jet_btagDeepB[i];
+         ind = Jet_partonFlavour[i];
+         cleanJet = true;
+         for (int i=0; i<selectedLeptons->size(); i++) {
+            Double_t lep_eta = (*selectedLeptons)[i]->eta_;
+            Double_t lep_phi = (*selectedLeptons)[i]->phi_ ;
+            if (deltaR(eta, phi, lep_eta, lep_phi) < 0.4) cleanJet = false;
+         }
+         if (cleanJet && pt>30 && abs(eta)<2.4) selectedJets->push_back(new jet_candidate(pt, eta, phi, mass, btag, year, ind));
+      }
+
+      // sort selected leptons
+      
+      sort(selectedLeptons->begin(), selectedLeptons->end(),ComparePtLep);
+      sort(selectedJets->begin(), selectedJets->end(),ComparePtJet);
+      // 2l categorization
+      // Must have 2 leptons -- tight or fakeable
+
+
+      int nLepTF = nFake+nTight;
+
+      // 2l Fake channels
+      // channel by number of fakeable leptons
+      Float_t fakefactor =  1.0;
+      for (auto it = (*selectedLeptons).begin(); it!=(*selectedLeptons).end(); ++it) {
+	 if ((**it).lep_==1)  {
+	    fakefactor*=((**it).isTightLep_) ? 1.0 : ele_sf->getScaleFactor((**it).pt_, (**it).eta_);
+	 }
+	 else if ((**it).lep_==10)  {
+	    fakefactor*= ((**it).isTightLep_) ? 1.0 : mu_sf->getScaleFactor((**it).pt_, (**it).eta_);
+	 }
+      }
+      
+      // btag scale factors
+      float BJetSF, CJetSF, LJetSF;
+      float BJetEff, CJetEff, LJetEff;
+      float P_bjet_mc = 1.0, P_bjet_data = 1.0;
+      for (jet_candidate *jet : *selectedJets) {
+         if (data=="data") continue;
+          
+         // get jet scale factors
+         BJetSF = csetBcJetSF->evaluate({"central", "M", 5, abs((jet->eta_)),(jet->pt_)});
+         CJetSF = csetBcJetSF->evaluate({"central", "M", 4, abs((jet->eta_)),(jet->pt_)});
+         LJetSF = csetLightJetSF->evaluate({"central", "M", 0, abs((jet->eta_)),(jet->pt_)});
+         BJetEff = btagEff_b_H->getScaleFactor(jet->pt_, abs(jet->eta_));
+         CJetEff = btagEff_c_H->getScaleFactor(jet->pt_, abs(jet->eta_));
+         LJetEff = btagEff_udsg_H->getScaleFactor(jet->pt_, abs(jet->eta_));
+         // b-quark
+         if (abs(jet->flavor_)==5) {
+            P_bjet_mc *= (jet->btag_) ? (BJetEff) : (1 - BJetEff); 
+            P_bjet_data *= (jet->btag_) ? (BJetEff*BJetSF) : (1 - BJetEff*BJetSF);
+         }
+         // c quark
+         else if (abs(jet->flavor_)==4) {
+            P_bjet_mc *= (jet->btag_) ? (CJetEff) : (1 - CJetEff);
+            P_bjet_data *= (jet->btag_) ? (CJetEff*CJetSF) : (1 - CJetEff*CJetSF);
+         }
+         // light quark / gluon
+         else {
+            P_bjet_mc *= (jet->btag_) ? (LJetEff) : (1 - LJetEff);
+            P_bjet_data *= (jet->btag_) ? (LJetEff*LJetSF) : (1 - LJetEff*LJetSF);
+         }
+         
+      }
+
+      if (print) cout << "scale factor  " << fakefactor << endl;
+
+/*      if (iseft) weight_EFT = lumi*(1.0/nRuns)*eleNominalWeight*muNominalWeight*fakefactor*P_bjet_data/P_bjet_mc;
+      if (iseft) eft_fit = new WCFit(nWCnames, wc_names_lst, nEFTfitCoefficients, EFTfitCoefficients, weight_EFT);
+      if (k<10) {
+         fout << eventID << endl;
+         for (int i=0; i<12; i++) {
+            string text{"EFTrwgt4_"+ wc_names_lst[i] + "_1.0"};
+            WCPoint *wc = new WCPoint(text);
+            Float_t weightA = eft_fit->evalPoint(wc);
+            fout << wc_names_lst[i] <<":" << weightA << endl;
+            delete wc;
+         }
+         k++;
+      }
+*/
+
+      if (print) cout << "nLep == 2  " << (nLepTF ==2) << endl;
+      if (nLepTF > 1) {
+
+         // 2l lepton channels
+         // channel by type of leptons and charge
+
+         cat = EventCategory((*selectedLeptons), (*selectedJets));
+         ch = getIndex(channels, cat);
+         int nbJets = 0;
+	 for (auto it = (*selectedJets).begin(); it != (*selectedJets).end(); ++it) {
+	    nbJets+=(**it).btag_;
+	 }
+	 int reg = (nbJets>1) ? 2 : nbJets;
+
+	 if (print) cout << cat << "  " << ch << endl;
+	 mll = ((*selectedLeptons)[0]->p4_+(*selectedLeptons)[1]->p4_).M();
+         onZ = isOnZ(*selectedLeptons);
+         // if 2l fill fake_lepton_region_var hist [fakeChannel][ch][onZ]
+         
+         if (ch < 0) continue;
+         cout << ch;
+
+	 weight*=eleNominalWeight*muNominalWeight*fakefactor*P_bjet_data/P_bjet_mc;
+         if (iseft) weight_EFT = lumi*(1000.0/nRuns)*eleNominalWeight*muNominalWeight*fakefactor*P_bjet_data/P_bjet_mc;
+         if (iseft) eft_fit = new WCFit(nWCnames, wc_names_lst, nEFTfitCoefficients, EFTfitCoefficients, weight_EFT);
+         else eft_fit = new WCFit(0, wc_names_lst,1,  &genWeight, 1.0); 
+         if (iseft) weight = weight_EFT;
+         isSignal = fname.Contains("FCNC");
+         lep1Pt = (*selectedLeptons)[0]->pt_;
+         lep1Eta = (*selectedLeptons)[0]->eta_;
+         lep1Phi =(*selectedLeptons)[0]->phi_;
+         lep2Pt = (*selectedLeptons)[1]->pt_;
+         lep2Eta = (*selectedLeptons)[1]->eta_;
+         lep2Phi = (*selectedLeptons)[1]->phi_;
+         llM = ((*selectedLeptons)[0]->p4_+(*selectedLeptons)[1]->p4_).M();
+         llPt = ((*selectedLeptons)[0]->p4_+(*selectedLeptons)[1]->p4_).Pt();
+         llDr = deltaR((*selectedLeptons)[0]->eta_,(*selectedLeptons)[0]->phi_,(*selectedLeptons)[1]->eta_,(*selectedLeptons)[1]->phi_);
+         llDphi = abs(deltaPhi((*selectedLeptons)[0]->phi_,(*selectedLeptons)[1]->phi_));
+         njet = selectedJets->size();
+         nbjet = nbJets;
+         Met = MET_pt;
+         MetPhi = MET_phi;
+         nVtx = PV_npvs;
+         jet1Pt = (njet>0) ? (*selectedJets)[0]->pt_ : -1;
+         jet1Eta = (njet>0) ? (*selectedJets)[0]->eta_ : -4;
+         jet1Phi = (njet>0) ? (*selectedJets)[0]->phi_ : -4;
+         channel = ch;
+         dset = (!iseft) ? DataSets[fname] : -1;
+         
+         std::map<std::string,float> features;
+         features["lep1Pt"] = lep1Pt;
+         features["lep1Eta"] = lep1Eta;
+         features["lep1Phi"] = lep1Phi;
+         features["lep2Pt"] = lep2Pt;
+         features["lep2Eta"] = lep2Eta;
+         features["lep2Phi"] = lep2Phi;
+         features["jet1Pt"] = jet1Pt;
+         features["jet1Eta"] = jet1Eta;
+         features["jet1Phi"] = jet1Phi;
+         features["llM"] = llM ;
+         features["llPt"] = llPt;
+         features["llDr"] = llDr;
+         features["llDphi"] = llDphi;
+         features["Met"] = Met;
+         features["MetPhi"] = MetPhi;
+         features["njet"] = njet;
+         features["nbjet"] = nbjet;
+         features["nVtx"] = nVtx;
+         float pred;
+         for (auto wc : wc_names)
+         {
+            string c = cat.Data();
+            string r = regions[reg].Data();
+            string w = wc.Data();
+            pred = XGBModels[c][r][w]->predict_proba(features);
+            Hists[ch][reg][vInd(vars,"BDToutput_"+wc)]->Fill(pred);
+         }
+         
+/*         if(iseft){
+            for (int i=0; i<wc_names_lst_FCNC.size(); i++){
+               string text{"EFTrwgt4_"+wc_names_lst_FCNC[i]+"_1.0"};
+               WCPoint *wc = new WCPoint(text);
+               weights[i] = eft_fit->evalPoint(wc);
+               delete wc;              
+            }
+         }
+         else {
+            for (int i=0; i<wc_names_lst_FCNC.size(); i++) weights[i]=weight;
+         }
+
+         t1->Fill();
+*/
+/*
+            if (cat=="3LoffZp" || cat == "3LoffZm") { 
+            for (int i=0; i<12; i++) {
+               string text{"EFTrwgt4_"+ wc_names_lst[i] + "_1.0"};
+               WCPoint *wc = new WCPoint(text);
+               Float_t weightA = eft_fit->evalPoint(wc);
+               Hist_wc[i][0]->Fill(mll, weightA, *eft_fit);
+               delete wc;
+      
+     
+            }
+            }
+*/
+
+         Hists[ch][reg][vInd(vars,"lep1Pt")]->Fill((*selectedLeptons)[0]->pt_, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"lep1Pt200")]->Fill((*selectedLeptons)[0]->pt_, weight, *eft_fit);
+	 Hists[ch][reg][vInd(vars,"lep1Eta")]->Fill((*selectedLeptons)[0]->eta_, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"lep1Phi")]->Fill((*selectedLeptons)[0]->phi_, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"lep2Pt")]->Fill((*selectedLeptons)[1]->pt_, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"lep2Eta")]->Fill((*selectedLeptons)[1]->eta_, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"lep2Phi")]->Fill((*selectedLeptons)[1]->phi_, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"llM")]->Fill(mll, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"llPt")]->Fill(llPt, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"llDr")]->Fill(llDr, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"llDphi")]->Fill(llDphi, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"njet")]->Fill(selectedJets->size(), weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"nbjet")]->Fill(nbJets, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"Met")]->Fill(MET_pt, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"MetPhi")]->Fill(MET_phi, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"nVtx")]->Fill(PV_npvs, weight, *eft_fit);
+         Hists[ch][reg][vInd(vars,"llMZw")]->Fill(mll, weight, *eft_fit);
+	 if (selectedJets->size()>0) {
+	    Hists[ch][reg][vInd(vars,"jet1Pt")]->Fill((*selectedJets)[0]->pt_, weight, *eft_fit);
+            Hists[ch][reg][vInd(vars,"jet1Eta")]->Fill((*selectedJets)[0]->eta_, weight, *eft_fit);
+            Hists[ch][reg][vInd(vars,"jet1Phi")]->Fill((*selectedJets)[0]->phi_, weight, *eft_fit);
+	 }
+	 // Fill all bjet reg
+         Hists[ch][3][vInd(vars,"lep1Pt")]->Fill((*selectedLeptons)[0]->pt_, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"lep1Pt200")]->Fill((*selectedLeptons)[0]->pt_, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"lep1Eta")]->Fill((*selectedLeptons)[0]->eta_, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"lep1Phi")]->Fill((*selectedLeptons)[0]->phi_, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"lep2Pt")]->Fill((*selectedLeptons)[1]->pt_, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"lep2Eta")]->Fill((*selectedLeptons)[1]->eta_, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"lep2Phi")]->Fill((*selectedLeptons)[1]->phi_, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"llM")]->Fill(mll, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"llPt")]->Fill(llPt, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"llDr")]->Fill(llDr, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"llDphi")]->Fill(llDphi, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"njet")]->Fill(selectedJets->size(), weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"nbjet")]->Fill(nbJets, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"Met")]->Fill(MET_pt, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"MetPhi")]->Fill(MET_phi, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"nVtx")]->Fill(PV_npvs, weight, *eft_fit);
+         Hists[ch][3][vInd(vars,"llMZw")]->Fill(mll, weight, *eft_fit);
+         if (selectedJets->size()>0) {
+            Hists[ch][3][vInd(vars,"jet1Pt")]->Fill((*selectedJets)[0]->pt_, weight, *eft_fit);
+            Hists[ch][3][vInd(vars,"jet1Eta")]->Fill((*selectedJets)[0]->eta_, weight, *eft_fit);
+            Hists[ch][3][vInd(vars,"jet1Phi")]->Fill((*selectedJets)[0]->phi_, weight, *eft_fit);
+         }
+
+
+         delete eft_fit;
+         
+	 
+      }
+   }
+   writeHists(f, Hists);
+//   fout.close();
+//     f->cd();
+//     t1->Write();
+     f->Close();
+
+
+}

@@ -1,0 +1,2745 @@
+[
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 246.957642, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0691271722 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 248.734222, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0115937227 }, 
+      { "nodeid": 4, "leaf": 0.0683089271 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 316.426392, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "llM", "split_condition": 194.432297, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0660014972 }, 
+      { "nodeid": 4, "leaf": -0.0207327791 }
+    ]}, 
+    { "nodeid": 2, "leaf": 0.0619995259 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 316.427368, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep1Pt", "split_condition": 126.235115, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0646659806 }, 
+      { "nodeid": 4, "leaf": -0.0264155269 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 527.255981, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.0270494167 }, 
+      { "nodeid": 6, "leaf": 0.0655920655 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 299.060486, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep1Pt", "split_condition": 130.23558, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0642156824 }, 
+      { "nodeid": 4, "leaf": -0.0183107611 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 487.538635, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.0217967927 }, 
+      { "nodeid": 6, "leaf": 0.0633066371 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 281.164368, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0564122349 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 283.692902, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0192882847 }, 
+      { "nodeid": 4, "leaf": 0.061618451 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 264.441467, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0568362363 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 468.785034, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0159094855 }, 
+      { "nodeid": 4, "leaf": 0.0597180501 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 269.476746, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0553027764 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 143.990417, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0134075619 }, 
+      { "nodeid": 4, "leaf": 0.058541853 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 264.441467, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.053264156 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 149.126724, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0139896236 }, 
+      { "nodeid": 4, "leaf": 0.0558673888 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 316.427368, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep1Pt", "split_condition": 126.376495, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0570304804 }, 
+      { "nodeid": 4, "leaf": -0.0238750782 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 531.864136, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.022858154 }, 
+      { "nodeid": 6, "leaf": 0.0555795282 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 324.856628, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0507239997 }, 
+    { "nodeid": 2, "leaf": 0.0498115867 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 319.305359, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep1Pt", "split_condition": 126.373795, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0544710904 }, 
+      { "nodeid": 4, "leaf": -0.0223010741 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 545.642212, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.0191323124 }, 
+      { "nodeid": 6, "leaf": 0.0537423044 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 299.060486, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "llM", "split_condition": 185.433441, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.051824227 }, 
+      { "nodeid": 4, "leaf": -0.0233791601 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 518.150696, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.0214812793 }, 
+      { "nodeid": 6, "leaf": 0.0519868545 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 308.818878, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "llM", "split_condition": 179.954742, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0510438345 }, 
+      { "nodeid": 4, "leaf": -0.0149309179 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 510.240662, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.0183667839 }, 
+      { "nodeid": 6, "leaf": 0.0515181608 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 253.658264, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0489566885 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 148.372559, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0123810992 }, 
+      { "nodeid": 4, "leaf": 0.0483969338 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 264.461884, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0467072204 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 148.641205, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00863885786 }, 
+      { "nodeid": 4, "leaf": 0.0485523865 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 153.255585, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0470631197 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 256.954285, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00575732999 }, 
+      { "nodeid": 4, "leaf": 0.0474857129 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 246.957642, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0447006784 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 262.869446, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00785202906 }, 
+      { "nodeid": 4, "leaf": 0.0472015366 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 264.461884, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0432948694 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 263.719788, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0101760412 }, 
+      { "nodeid": 4, "leaf": 0.0457724929 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 280.931854, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep1Pt", "split_condition": 126.745453, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0453477688 }, 
+      { "nodeid": 4, "leaf": -0.0185204949 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 488.429871, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.0116593093 }, 
+      { "nodeid": 6, "leaf": 0.0461120084 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 163.37149, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0435938388 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 143.435547, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00944268517 }, 
+      { "nodeid": 4, "leaf": 0.0443986319 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 280.931854, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0405314229 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 523.106689, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00792435557 }, 
+      { "nodeid": 4, "leaf": 0.0443195179 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 239.19339, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0424024388 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 256.954285, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00526349479 }, 
+      { "nodeid": 4, "leaf": 0.0424128249 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 357.157013, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "llM", "split_condition": 189.205475, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0435487218 }, 
+      { "nodeid": 4, "leaf": -0.010559177 }
+    ]}, 
+    { "nodeid": 2, "leaf": 0.0388884321 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 156.165833, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0413088128 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 462.610779, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0118720727 }, 
+      { "nodeid": 4, "leaf": 0.0422491021 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 117.98085, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep2Pt", "split_condition": 59.5062981, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0413683318 }, 
+      { "nodeid": 4, "leaf": -0.0152750108 }
+    ]}, 
+    { "nodeid": 2, "leaf": 0.0399481356 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 163.38382, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0404161699 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 487.860779, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00422442378 }, 
+      { "nodeid": 4, "leaf": 0.0404103287 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 299.053375, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "llM", "split_condition": 149.820068, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0402935743 }, 
+      { "nodeid": 4, "leaf": -0.0136412308 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 320.471832, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.0158289056 }, 
+      { "nodeid": 6, "leaf": 0.0407485813 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 264.461884, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0366079621 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 502.754272, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00597126782 }, 
+      { "nodeid": 4, "leaf": 0.0403451622 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 243.959549, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0371909812 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 143.759613, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.00027217489 }, 
+      { "nodeid": 4, "leaf": 0.0391524248 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 299.060486, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0360714085 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 323.637573, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0115188705 }, 
+      { "nodeid": 4, "leaf": 0.0398281142 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 243.96994, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0353332758 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 446.232025, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00690093078 }, 
+      { "nodeid": 4, "leaf": 0.0374625511 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 247.405396, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep1Pt", "split_condition": 91.957077, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0387551449 }, 
+      { "nodeid": 4, "leaf": -0.0164525062 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 259.956512, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.00886226632 }, 
+      { "nodeid": 6, "leaf": 0.0361751318 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 157.785553, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0355719365 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 487.538635, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0100768982 }, 
+      { "nodeid": 4, "leaf": 0.0383333378 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 247.406647, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0326990932 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 256.905518, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00400014594 }, 
+      { "nodeid": 4, "leaf": 0.0372643359 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 117.983002, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep1Pt", "split_condition": 124.327492, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0362807512 }, 
+      { "nodeid": 4, "leaf": -0.00417728443 }
+    ]}, 
+    { "nodeid": 2, "leaf": 0.0337385498 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 246.952271, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0321404971 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 189.477783, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00723621994 }, 
+      { "nodeid": 4, "leaf": 0.0375356451 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 82.8545685, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0352196582 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 502.837341, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00788419507 }, 
+      { "nodeid": 4, "leaf": 0.0363852419 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 267.621338, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "llPt", "split_condition": 93.3683624, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.036539562 }, 
+      { "nodeid": 4, "leaf": -0.0157124773 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 165.281464, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.0101238936 }, 
+      { "nodeid": 6, "leaf": 0.0353771336 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 115.546036, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep2Pt", "split_condition": 62.1058311, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0372370929 }, 
+      { "nodeid": 4, "leaf": -0.0108622881 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 228.30545, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.0143378405 }, 
+      { "nodeid": 6, "leaf": 0.0351444446 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 82.8545685, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0317849927 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 259.825684, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0054515698 }, 
+      { "nodeid": 4, "leaf": 0.0351898372 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 243.96994, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0322438143 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 145.954803, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00167533522 }, 
+      { "nodeid": 4, "leaf": 0.0336584784 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 83.896492, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0315068252 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 293.654114, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00514918612 }, 
+      { "nodeid": 4, "leaf": 0.0341292769 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 239.200439, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0324293487 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 499.154785, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00663223304 }, 
+      { "nodeid": 4, "leaf": 0.0336370617 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 272.995728, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0298556648 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 318.603546, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00874216389 }, 
+      { "nodeid": 4, "leaf": 0.0339572765 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 121.550392, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "llPt", "split_condition": 108.477913, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0315541849 }, 
+      { "nodeid": 4, "leaf": -0.00509001128 }
+    ]}, 
+    { "nodeid": 2, "leaf": 0.0281078722 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 116.426468, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep2Pt", "split_condition": 50.5319214, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0334225185 }, 
+      { "nodeid": 4, "leaf": -0.00883039553 }
+    ]}, 
+    { "nodeid": 2, "leaf": 0.0270791873 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 233.457214, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep2Pt", "split_condition": 59.5047569, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0342674255 }, 
+      { "nodeid": 4, "leaf": -0.00412317645 }
+    ]}, 
+    { "nodeid": 2, "leaf": 0.029629644 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 235.547928, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0283545218 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 487.862976, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00391311478 }, 
+      { "nodeid": 4, "leaf": 0.03140774 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 245.091461, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "llM", "split_condition": 195.797455, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0308248159 }, 
+      { "nodeid": 4, "leaf": -0.00388981146 }
+    ]}, 
+    { "nodeid": 2, "leaf": 0.0297543518 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 156.025543, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0286574215 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 471.551117, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00750027737 }, 
+      { "nodeid": 4, "leaf": 0.0312992446 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 156.03598, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep1Pt", "split_condition": 80.9459534, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0322081186 }, 
+      { "nodeid": 4, "leaf": -0.0129726529 }
+    ]}, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 473.076508, "yes": 5, "no": 6, "missing": 5 , "children": [
+      { "nodeid": 5, "leaf": 0.00387845887 }, 
+      { "nodeid": 6, "leaf": 0.0306579564 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 116.41333, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep2Pt", "split_condition": 59.5237808, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0330864862 }, 
+      { "nodeid": 4, "leaf": -0.0062905401 }
+    ]}, 
+    { "nodeid": 2, "leaf": 0.025519887 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 126.376816, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0280433036 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 293.71875, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00352689717 }, 
+      { "nodeid": 4, "leaf": 0.0299783573 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 139.034546, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0258455779 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 524.625732, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00945836212 }, 
+      { "nodeid": 4, "leaf": 0.0299510472 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 245.039398, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "llPt", "split_condition": 104.258736, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0264857188 }, 
+      { "nodeid": 4, "leaf": 0.00128661224 }
+    ]}, 
+    { "nodeid": 2, "leaf": 0.0271766409 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 195.248474, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.029760696 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 226.350586, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00444244593 }, 
+      { "nodeid": 4, "leaf": 0.027836578 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 59.5248413, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0303992201 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 226.423431, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.000812367303 }, 
+      { "nodeid": 4, "leaf": 0.0269172192 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 269.476746, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0267191641 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 319.731506, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00835415907 }, 
+      { "nodeid": 4, "leaf": 0.029848611 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 127.177689, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0261832234 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 458.774841, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00681813294 }, 
+      { "nodeid": 4, "leaf": 0.0274336338 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 243.96994, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0277589336 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 294.347504, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00309089688 }, 
+      { "nodeid": 4, "leaf": 0.0278872531 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 195.222382, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0274657942 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 252.059143, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00486638118 }, 
+      { "nodeid": 4, "leaf": 0.0268861242 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 247.406647, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0225848816 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 188.252716, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00569929043 }, 
+      { "nodeid": 4, "leaf": 0.0290380325 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 82.8555145, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0267573968 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 478.305939, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00635668216 }, 
+      { "nodeid": 4, "leaf": 0.0263457801 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 156.149353, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0279533882 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 499.154785, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00328391674 }, 
+      { "nodeid": 4, "leaf": 0.0268578995 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 239.200439, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.022937851 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 502.837341, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00824731495 }, 
+      { "nodeid": 4, "leaf": 0.0263255499 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 195.244263, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0270067789 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 148.324936, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00126449356 }, 
+      { "nodeid": 4, "leaf": 0.0250221081 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 160.790115, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.021488063 }, 
+    { "nodeid": 2, "leaf": 0.018284481 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 163.322693, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0275515262 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep1Pt", "split_condition": 256.921478, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -9.61580008e-05 }, 
+      { "nodeid": 4, "leaf": 0.023839036 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 230.936005, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "depth": 1, "split": "lep2Pt", "split_condition": 56.0631866, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": -0.0296668578 }, 
+      { "nodeid": 4, "leaf": -0.00372765353 }
+    ]}, 
+    { "nodeid": 2, "leaf": 0.0219347347 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 165.550095, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0221622027 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 478.305939, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00155483722 }, 
+      { "nodeid": 4, "leaf": 0.0243594907 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 228.210358, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0203970168 }, 
+    { "nodeid": 2, "depth": 1, "split": "lep2Pt", "split_condition": 148.372559, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00551484944 }, 
+      { "nodeid": 4, "leaf": 0.0238199793 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 189.205475, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0210757125 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 403.836914, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00468242122 }, 
+      { "nodeid": 4, "leaf": 0.0210443679 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 153.260742, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0254543163 }, 
+    { "nodeid": 2, "leaf": 0.0181395188 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 146.986877, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0208697077 }, 
+    { "nodeid": 2, "leaf": 0.0149143357 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 126.736298, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0219945088 }, 
+    { "nodeid": 2, "depth": 1, "split": "Met", "split_condition": 71.1113129, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.0212424155 }, 
+      { "nodeid": 4, "leaf": 0.00252169254 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 121.656616, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0146412132 }, 
+    { "nodeid": 2, "leaf": 0.0211518835 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 228.407379, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0112471171 }, 
+    { "nodeid": 2, "leaf": 0.0202836003 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.204567, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0179723352 }, 
+    { "nodeid": 2, "leaf": 0.0173593387 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 67.2562866, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0187553596 }, 
+    { "nodeid": 2, "depth": 1, "split": "llM", "split_condition": 402.496094, "yes": 3, "no": 4, "missing": 3 , "children": [
+      { "nodeid": 3, "leaf": 0.00382091245 }, 
+      { "nodeid": 4, "leaf": 0.0214409474 }
+    ]}
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 78.4575195, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0211916082 }, 
+    { "nodeid": 2, "leaf": 0.0114701176 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 212.348022, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0216872692 }, 
+    { "nodeid": 2, "leaf": 0.0142085534 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 166.559448, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.021420598 }, 
+    { "nodeid": 2, "leaf": 0.0135996025 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 117.948616, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.013331037 }, 
+    { "nodeid": 2, "leaf": 0.0168745182 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 235.547928, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0166690294 }, 
+    { "nodeid": 2, "leaf": 0.0135971662 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.212158, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0203407668 }, 
+    { "nodeid": 2, "leaf": 0.0147094056 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 67.6637573, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0189403147 }, 
+    { "nodeid": 2, "leaf": 0.0120638376 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 245.091461, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00973475166 }, 
+    { "nodeid": 2, "leaf": 0.0200853795 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 123.480576, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0135999108 }, 
+    { "nodeid": 2, "leaf": 0.0145102292 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.209366, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0160650481 }, 
+    { "nodeid": 2, "leaf": 0.0117966635 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 108.411957, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0173205379 }, 
+    { "nodeid": 2, "leaf": 0.0158540159 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 301.077209, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0131085794 }, 
+    { "nodeid": 2, "leaf": 0.0106163025 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 230.008118, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0142339338 }, 
+    { "nodeid": 2, "leaf": 0.0159125812 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.289108, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0142030846 }, 
+    { "nodeid": 2, "leaf": 0.0127480002 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 122.684914, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0128090475 }, 
+    { "nodeid": 2, "leaf": 0.0138224801 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 243.959549, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0143498071 }, 
+    { "nodeid": 2, "leaf": 0.0110464226 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 78.4609833, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.014208423 }, 
+    { "nodeid": 2, "leaf": 0.0134350369 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 78.0705795, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0146271307 }, 
+    { "nodeid": 2, "leaf": 0.00944528636 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 222.635391, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0178597048 }, 
+    { "nodeid": 2, "leaf": 0.00657363934 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 359.472717, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.011519352 }, 
+    { "nodeid": 2, "leaf": 0.0119367391 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 185.993835, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0144378413 }, 
+    { "nodeid": 2, "leaf": 0.0129089765 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 115.557556, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0120361568 }, 
+    { "nodeid": 2, "leaf": 0.0121214604 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 108.212982, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0135033857 }, 
+    { "nodeid": 2, "leaf": 0.0117542883 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 202.478424, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0154782031 }, 
+    { "nodeid": 2, "leaf": 0.00893744733 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 219.276016, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00634172233 }, 
+    { "nodeid": 2, "leaf": 0.0128193684 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 166.559448, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0157574825 }, 
+    { "nodeid": 2, "leaf": 0.00936817657 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 246.957642, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0139807416 }, 
+    { "nodeid": 2, "leaf": 0.00830805674 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.376968, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00856126193 }, 
+    { "nodeid": 2, "leaf": 0.0128415031 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 243.96994, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0152938394 }, 
+    { "nodeid": 2, "leaf": 0.00903149042 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 102.269348, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0138328383 }, 
+    { "nodeid": 2, "leaf": 0.00942975935 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 358.754211, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00603688089 }, 
+    { "nodeid": 2, "leaf": 0.0102502108 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 117.792709, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0104787061 }, 
+    { "nodeid": 2, "leaf": 0.00843289215 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 205.905518, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00727610523 }, 
+    { "nodeid": 2, "leaf": 0.01345402 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.209366, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0126647223 }, 
+    { "nodeid": 2, "leaf": 0.0158214048 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 83.896492, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0150049524 }, 
+    { "nodeid": 2, "leaf": 0.00656945445 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 115.240936, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0118518155 }, 
+    { "nodeid": 2, "leaf": 0.0111441491 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.288048, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0126082692 }, 
+    { "nodeid": 2, "leaf": 0.00840111449 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.602814, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00989838503 }, 
+    { "nodeid": 2, "leaf": 0.0111810071 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.209366, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00959941559 }, 
+    { "nodeid": 2, "leaf": 0.00768848648 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.289108, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0132970577 }, 
+    { "nodeid": 2, "leaf": 0.009942187 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 274.314972, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0117592681 }, 
+    { "nodeid": 2, "leaf": 0.00947329774 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 122.684914, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00827220269 }, 
+    { "nodeid": 2, "leaf": 0.0118209897 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 102.269348, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00851352885 }, 
+    { "nodeid": 2, "leaf": 0.00976108667 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.275688, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00651049614 }, 
+    { "nodeid": 2, "leaf": 0.0121290088 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.51299143, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0093502067 }, 
+    { "nodeid": 2, "leaf": 0.00635646842 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.289108, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00783729833 }, 
+    { "nodeid": 2, "leaf": 0.0129281636 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 70.8386536, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00774693117 }, 
+    { "nodeid": 2, "leaf": -0.00820612814 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 125.71875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.006016945 }, 
+    { "nodeid": 2, "leaf": -0.0115618678 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.663895, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00870689843 }, 
+    { "nodeid": 2, "leaf": 0.0088357199 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 189.56955, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0118461503 }, 
+    { "nodeid": 2, "leaf": 0.00795333553 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.289108, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.010015063 }, 
+    { "nodeid": 2, "leaf": 0.00611844147 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.195327759, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00790105667 }, 
+    { "nodeid": 2, "leaf": 0.0119976196 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 87.2988892, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.014256862 }, 
+    { "nodeid": 2, "leaf": 0.00746602332 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 124.485039, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00905738305 }, 
+    { "nodeid": 2, "leaf": 0.00823189784 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.288048, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00743111176 }, 
+    { "nodeid": 2, "leaf": 0.00914929435 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.409538, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00866528414 }, 
+    { "nodeid": 2, "leaf": 0.00668179058 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 323.599762, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00691060303 }, 
+    { "nodeid": 2, "leaf": 0.00722680753 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 98.7501984, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0107928449 }, 
+    { "nodeid": 2, "leaf": 0.00628528697 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.075745, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00860157516 }, 
+    { "nodeid": 2, "leaf": 0.00851567648 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 127.070633, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00520290062 }, 
+    { "nodeid": 2, "leaf": 0.00768415257 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 116.34375, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00830963999 }, 
+    { "nodeid": 2, "leaf": -0.0104237925 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 100.694962, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0103685185 }, 
+    { "nodeid": 2, "leaf": 0.00821588188 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.370819, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0078852158 }, 
+    { "nodeid": 2, "leaf": 0.0103437304 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.378448, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00899487454 }, 
+    { "nodeid": 2, "leaf": 0.0101394709 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 65.1495819, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00523356767 }, 
+    { "nodeid": 2, "leaf": -0.00626169052 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 99.28125, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0103427535 }, 
+    { "nodeid": 2, "leaf": -0.00537694991 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.371216, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00588158006 }, 
+    { "nodeid": 2, "leaf": 0.00866676122 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 124.21875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00509166811 }, 
+    { "nodeid": 2, "leaf": -0.0102384109 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 136.860962, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00447560381 }, 
+    { "nodeid": 2, "leaf": 0.00939797703 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 114.71875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00981775578 }, 
+    { "nodeid": 2, "leaf": -0.00655983202 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 68.9450684, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00998450629 }, 
+    { "nodeid": 2, "leaf": -0.00702734292 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 125.71875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00585092511 }, 
+    { "nodeid": 2, "leaf": -0.0111333234 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 299.053375, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00817163382 }, 
+    { "nodeid": 2, "leaf": 0.00745071378 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.42751169, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00819304027 }, 
+    { "nodeid": 2, "leaf": 0.00863611978 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 316.426392, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0123022934 }, 
+    { "nodeid": 2, "leaf": 0.00727632781 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 95.4087372, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0092796823 }, 
+    { "nodeid": 2, "leaf": 0.00790079311 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 71.1034698, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00977096241 }, 
+    { "nodeid": 2, "leaf": -0.00711663999 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 102.269348, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00839761551 }, 
+    { "nodeid": 2, "leaf": 0.00611693645 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 70.3663177, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0117599247 }, 
+    { "nodeid": 2, "leaf": -0.00617600186 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.47084665, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00817908719 }, 
+    { "nodeid": 2, "leaf": 0.00547463587 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.47377014, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00724717602 }, 
+    { "nodeid": 2, "leaf": 0.00469372468 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 100.681595, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00990145747 }, 
+    { "nodeid": 2, "leaf": 0.00400682352 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 69.5742645, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00824148115 }, 
+    { "nodeid": 2, "leaf": -0.00625170674 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 95.4308548, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00409304351 }, 
+    { "nodeid": 2, "leaf": 0.00834313221 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.406303, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0100544998 }, 
+    { "nodeid": 2, "leaf": 0.00784793403 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 102.783783, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00582787395 }, 
+    { "nodeid": 2, "leaf": 0.00811299123 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "nVtx", "split_condition": 26, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00722960476 }, 
+    { "nodeid": 2, "leaf": -0.00425580842 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.42751169, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0075777052 }, 
+    { "nodeid": 2, "leaf": 0.00701852981 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 299.060486, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00803407561 }, 
+    { "nodeid": 2, "leaf": 0.00274698995 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 70.8413696, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00898825191 }, 
+    { "nodeid": 2, "leaf": -0.00468503078 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.075745, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00383055233 }, 
+    { "nodeid": 2, "leaf": 0.00892687403 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Eta", "split_condition": -0.0449562073, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00913092028 }, 
+    { "nodeid": 2, "leaf": -0.00388969178 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 70.8386536, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0109642502 }, 
+    { "nodeid": 2, "leaf": -0.00256731943 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 71.5230179, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00598242227 }, 
+    { "nodeid": 2, "leaf": -0.00621232251 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 125.71875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00813578628 }, 
+    { "nodeid": 2, "leaf": -0.00832820218 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00291136955 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.426285, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0125408601 }, 
+    { "nodeid": 2, "leaf": 0.00685339607 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.42744446, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00551851839 }, 
+    { "nodeid": 2, "leaf": 0.0120383156 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "nVtx", "split_condition": 26, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00664566737 }, 
+    { "nodeid": 2, "leaf": -0.00525040925 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 111.28125, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00401023729 }, 
+    { "nodeid": 2, "leaf": -0.00640645716 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 122.90625, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00602869317 }, 
+    { "nodeid": 2, "leaf": -0.00489322329 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 134.854218, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00672320789 }, 
+    { "nodeid": 2, "leaf": 0.0112192556 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.0536956787, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00498959282 }, 
+    { "nodeid": 2, "leaf": 0.00621752487 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.140136719, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00687583722 }, 
+    { "nodeid": 2, "leaf": -0.00534597272 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.07309, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00494036824 }, 
+    { "nodeid": 2, "leaf": 0.00625979761 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 119.209366, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00628491212 }, 
+    { "nodeid": 2, "leaf": 0.00816416647 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 116.34375, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00806756504 }, 
+    { "nodeid": 2, "leaf": -0.00261001126 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 102.408066, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00903337542 }, 
+    { "nodeid": 2, "leaf": 0.00512749143 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00437635044 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 124.21875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00869189762 }, 
+    { "nodeid": 2, "leaf": -0.00613621483 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 135.954163, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00458834274 }, 
+    { "nodeid": 2, "leaf": 0.00554026756 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 95.9613724, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.010600118 }, 
+    { "nodeid": 2, "leaf": 0.00388613692 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 114.71875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00337856007 }, 
+    { "nodeid": 2, "leaf": -0.00889708102 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.07309, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00806278177 }, 
+    { "nodeid": 2, "leaf": 0.00509133935 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 100.70166, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00520078698 }, 
+    { "nodeid": 2, "leaf": 0.00716697006 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 282.655396, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00556579512 }, 
+    { "nodeid": 2, "leaf": 0.00619555917 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 122.34375, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00884355605 }, 
+    { "nodeid": 2, "leaf": -0.0032089157 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 281.417206, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00935502071 }, 
+    { "nodeid": 2, "leaf": 0.0057552699 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 136.856812, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00388049125 }, 
+    { "nodeid": 2, "leaf": 0.00863398146 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 68.9427795, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00682859356 }, 
+    { "nodeid": 2, "leaf": -0.00570511259 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.0504684448, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00595522393 }, 
+    { "nodeid": 2, "leaf": 0.0111848097 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0018764867 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 100.70166, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0111537557 }, 
+    { "nodeid": 2, "leaf": 0.00272991997 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.46695709, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.010200534 }, 
+    { "nodeid": 2, "leaf": 0.00154516276 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00482566794 },
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 71.0983429, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0115793319 }, 
+    { "nodeid": 2, "leaf": -0.00869517867 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.0764312744, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0068004732 }, 
+    { "nodeid": 2, "leaf": 0.00659181736 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.507568359, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00643184129 }, 
+    { "nodeid": 2, "leaf": 0.004937978 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.193130493, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00735204481 }, 
+    { "nodeid": 2, "leaf": -0.00811776891 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.4763093, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00863612257 }, 
+    { "nodeid": 2, "leaf": 0.00737755047 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 71.0879364, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00267989188 }, 
+    { "nodeid": 2, "leaf": -0.00863833446 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.47070169, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00472201966 }, 
+    { "nodeid": 2, "leaf": 0.00706473272 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 70.6943054, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00546794618 }, 
+    { "nodeid": 2, "leaf": -0.00532136718 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 69.5729904, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00628531491 }, 
+    { "nodeid": 2, "leaf": -0.00579012278 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 100.70166, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00697222119 }, 
+    { "nodeid": 2, "leaf": 0.00548040634 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.0504684448, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00444904156 }, 
+    { "nodeid": 2, "leaf": 0.00765704503 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.211990356, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00487830816 }, 
+    { "nodeid": 2, "leaf": 0.00724323839 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": 0.103973389, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00659710262 }, 
+    { "nodeid": 2, "leaf": -0.00765276514 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00381673989 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 136.860962, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00749092735 }, 
+    { "nodeid": 2, "leaf": 0.00555583509 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00181862933 },
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 313.71582, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00577953923 }, 
+    { "nodeid": 2, "leaf": 0.00855124276 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.075745, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00422868738 }, 
+    { "nodeid": 2, "leaf": 0.00877721794 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00392900826 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 127.071785, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00853785593 }, 
+    { "nodeid": 2, "leaf": 0.00838387664 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 106.21875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00751350261 }, 
+    { "nodeid": 2, "leaf": -0.00673355907 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 136.120026, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00383800012 }, 
+    { "nodeid": 2, "leaf": 0.00689712493 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.76003027, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00708715245 }, 
+    { "nodeid": 2, "leaf": 0.00581432087 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 69.6735992, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00404553441 }, 
+    { "nodeid": 2, "leaf": -0.00836682972 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.0924835205, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00202189363 }, 
+    { "nodeid": 2, "leaf": 0.00425591413 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 187.007874, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00515755685 }, 
+    { "nodeid": 2, "leaf": 0.00246203411 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": 0.0758209229, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00612356002 }, 
+    { "nodeid": 2, "leaf": -0.00584137952 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.81276107, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00697936816 }, 
+    { "nodeid": 2, "leaf": 0.00269452296 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 114.65625, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00699377293 }, 
+    { "nodeid": 2, "leaf": -0.0037445568 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.117729187, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00300284917 }, 
+    { "nodeid": 2, "leaf": 0.00752555765 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000603578868 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 114.71875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00555093493 }, 
+    { "nodeid": 2, "leaf": -0.00877407379 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.587219, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00785578787 }, 
+    { "nodeid": 2, "leaf": -0.00332684908 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.104255676, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00742518343 }, 
+    { "nodeid": 2, "leaf": -0.00230978103 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.0147008896, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00151361595 }, 
+    { "nodeid": 2, "leaf": 0.00950475875 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.371216, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0064587635 }, 
+    { "nodeid": 2, "leaf": 0.0106128082 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 136.86496, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00852298923 }, 
+    { "nodeid": 2, "leaf": 0.00521903858 }
+  ]},
+  { "nodeid": 0, "leaf": 0.0020941759 },
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 69.6738281, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.000202379684 }, 
+    { "nodeid": 2, "leaf": -0.00786497071 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00116853078 },
+  { "nodeid": 0, "leaf": -0.00567876082 },
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.79257059, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0061866343 }, 
+    { "nodeid": 2, "leaf": 0.00508244988 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00397267938 },
+  { "nodeid": 0, "leaf": 0.00340885692 },
+  { "nodeid": 0, "leaf": 0.00423986418 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Eta", "split_condition": -0.0449485779, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0103197107 }, 
+    { "nodeid": 2, "leaf": -0.00470984681 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00217741192 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.213378906, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00958501641 }, 
+    { "nodeid": 2, "leaf": -0.00456872163 }
+  ]},
+  { "nodeid": 0, "leaf": 5.92528486e-05 },
+  { "nodeid": 0, "leaf": -0.00303401495 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 116.40625, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0058061271 }, 
+    { "nodeid": 2, "leaf": -0.00794451032 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00137094536 },
+  { "nodeid": 0, "leaf": 0.00100103696 },
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 71.7495728, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00603223778 }, 
+    { "nodeid": 2, "leaf": -0.00339870784 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 69.4538727, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0118262451 }, 
+    { "nodeid": 2, "leaf": -0.00598671706 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000699953816 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.405891, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00577019248 }, 
+    { "nodeid": 2, "leaf": 0.00720280176 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.183990479, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00343315001 }, 
+    { "nodeid": 2, "leaf": -0.00462369621 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 69.6735992, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00678519066 }, 
+    { "nodeid": 2, "leaf": -0.00373573555 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.246932983, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00619705068 }, 
+    { "nodeid": 2, "leaf": 0.00606032694 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "nVtx", "split_condition": 26, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0060752728 }, 
+    { "nodeid": 2, "leaf": -0.00597869698 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.0924835205, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00688086497 }, 
+    { "nodeid": 2, "leaf": 0.00563886808 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 175.914703, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00466012815 }, 
+    { "nodeid": 2, "leaf": -0.00395340472 }
+  ]},
+  { "nodeid": 0, "leaf": 6.13009324e-05 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Eta", "split_condition": -0.0445823669, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00956601836 }, 
+    { "nodeid": 2, "leaf": -0.00295312493 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 69.453331, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00616051583 }, 
+    { "nodeid": 2, "leaf": -0.00493062614 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 99.8266068, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00982622895 }, 
+    { "nodeid": 2, "leaf": 0.00337182614 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 134.854218, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00524228858 }, 
+    { "nodeid": 2, "leaf": 0.00306431903 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00137835019 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 131.478973, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00576125551 }, 
+    { "nodeid": 2, "leaf": 0.003112823 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 99.65625, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00943946186 }, 
+    { "nodeid": 2, "leaf": -0.00482121063 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0001345442 },
+  { "nodeid": 0, "leaf": 0.00106251729 },
+  { "nodeid": 0, "leaf": 0.00119841704 },
+  { "nodeid": 0, "leaf": -0.00147299923 },
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.77017498, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00210537016 }, 
+    { "nodeid": 2, "leaf": -0.00579954078 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 69.5742645, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00625169091 }, 
+    { "nodeid": 2, "leaf": -0.00519795157 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 95.9999542, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00930281822 }, 
+    { "nodeid": 2, "leaf": 0.00131711073 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 116.40625, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0042628455 }, 
+    { "nodeid": 2, "leaf": -0.00535700191 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.47435617, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0038830319 }, 
+    { "nodeid": 2, "leaf": 0.00703999028 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.171035767, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00133583858 }, 
+    { "nodeid": 2, "leaf": 0.0101396283 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 281.400146, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00541438395 }, 
+    { "nodeid": 2, "leaf": 0.00375762396 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 127.995102, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00664079469 }, 
+    { "nodeid": 2, "leaf": 0.0031916583 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 67.2809448, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00709635671 }, 
+    { "nodeid": 2, "leaf": -0.00693278434 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00127376418 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.405891, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0100836325 }, 
+    { "nodeid": 2, "leaf": 0.00516103953 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0018848175 },
+  { "nodeid": 0, "leaf": -0.000803364208 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 112.40625, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00126356841 }, 
+    { "nodeid": 2, "leaf": -0.00738394028 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.406303, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00493860198 }, 
+    { "nodeid": 2, "leaf": 0.00801171362 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00360621209 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.00433683395, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.000577464874 }, 
+    { "nodeid": 2, "leaf": 0.00656214263 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.0968093872, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00342145376 }, 
+    { "nodeid": 2, "leaf": 0.00635524793 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00208697212 },
+  { "nodeid": 0, "leaf": 0.00290449499 },
+  { "nodeid": 0, "leaf": -0.00147031737 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 136.86496, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00645780843 }, 
+    { "nodeid": 2, "leaf": 0.00583119923 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000575981103 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 175.914703, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00196997798 }, 
+    { "nodeid": 2, "leaf": -0.0050812047 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00013337766 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.0994720459, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00364702474 }, 
+    { "nodeid": 2, "leaf": 0.00693441369 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00232021883 },
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.4763093, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00986311212 }, 
+    { "nodeid": 2, "leaf": 0.00639678445 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.6759901, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00522333477 }, 
+    { "nodeid": 2, "leaf": -0.00408188207 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00252263807 },
+  { "nodeid": 0, "leaf": -0.00489846244 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.121063232, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00662182597 }, 
+    { "nodeid": 2, "leaf": -0.00223344099 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.221176147, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00763279526 }, 
+    { "nodeid": 2, "leaf": -0.00515653938 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00346979522 },
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.8216548, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00925743859 }, 
+    { "nodeid": 2, "leaf": 0.00817925949 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.44647217, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00553787453 }, 
+    { "nodeid": 2, "leaf": 0.0069993902 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00116793811 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.075745, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00334006292 }, 
+    { "nodeid": 2, "leaf": 0.00930389762 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00271970825 },
+  { "nodeid": 0, "leaf": 0.00272476836 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 137.264359, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00923648849 }, 
+    { "nodeid": 2, "leaf": 9.51706534e-05 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.125183105, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00806130562 }, 
+    { "nodeid": 2, "leaf": -0.00573355565 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00570769189 },
+  { "nodeid": 0, "leaf": -0.00544116972 },
+  { "nodeid": 0, "leaf": 0.0014017314 },
+  { "nodeid": 0, "leaf": -0.000601530308 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 106.15625, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00983754918 }, 
+    { "nodeid": 2, "leaf": -0.00354278344 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000411402056 },
+  { "nodeid": 0, "leaf": -0.00247059297 },
+  { "nodeid": 0, "leaf": -0.00252765301 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.241546631, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00711089838 }, 
+    { "nodeid": 2, "leaf": 0.00961057656 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0040148464 },
+  { "nodeid": 0, "leaf": -0.00246440619 },
+  { "nodeid": 0, "leaf": -0.00528003089 },
+  { "nodeid": 0, "leaf": -1.03508655e-05 },
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 283.020447, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00710855704 }, 
+    { "nodeid": 2, "leaf": -0.00231578201 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00579784019 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 120.40625, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00802949071 }, 
+    { "nodeid": 2, "leaf": -0.00273458054 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00489100069 },
+  { "nodeid": 0, "leaf": 0.000137515031 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.142868042, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00288343662 }, 
+    { "nodeid": 2, "leaf": -0.00315073458 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0014827057 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 105.46875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0110227317 }, 
+    { "nodeid": 2, "leaf": -0.0026013467 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00501363492 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.0761642456, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00416162191 }, 
+    { "nodeid": 2, "leaf": 0.00464962283 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000514342566 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.236404419, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0155812055 }, 
+    { "nodeid": 2, "leaf": -0.00446067611 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 70.8579102, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00791942328 }, 
+    { "nodeid": 2, "leaf": -0.00397434598 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 136.118317, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00750675891 }, 
+    { "nodeid": 2, "leaf": 0.0044115535 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0073140678 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.140060425, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00682010502 }, 
+    { "nodeid": 2, "leaf": -6.48429777e-05 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.07309, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00634279847 }, 
+    { "nodeid": 2, "leaf": 0.00720264716 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": -0.0158882141, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00611305749 }, 
+    { "nodeid": 2, "leaf": -0.00376285543 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0032040088 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 96.819931, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00560568552 }, 
+    { "nodeid": 2, "leaf": 0.00385900703 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.51531076, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00427924702 }, 
+    { "nodeid": 2, "leaf": 0.00692878524 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.48143625, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00496243872 }, 
+    { "nodeid": 2, "leaf": 0.00467395922 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 280.931854, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00447465573 }, 
+    { "nodeid": 2, "leaf": 0.00559495809 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.728195, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00472181151 }, 
+    { "nodeid": 2, "leaf": -0.00294572255 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.399948, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00644147163 }, 
+    { "nodeid": 2, "leaf": 0.00559687382 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00141302403 },
+  { "nodeid": 0, "leaf": 0.00127336977 },
+  { "nodeid": 0, "leaf": -0.000239786852 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.179763794, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00793006178 }, 
+    { "nodeid": 2, "leaf": 0.00708397618 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.568207, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00879483204 }, 
+    { "nodeid": 2, "leaf": -0.00580954785 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 126.378448, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00678527635 }, 
+    { "nodeid": 2, "leaf": 0.00449285517 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00328108552 },
+  { "nodeid": 0, "leaf": 0.00337075768 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.0658721924, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00490721408 }, 
+    { "nodeid": 2, "leaf": 0.00266017974 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000512679981 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 176.918213, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.011050378 }, 
+    { "nodeid": 2, "leaf": -0.000778605463 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Eta", "split_condition": -0.135864258, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00891639851 }, 
+    { "nodeid": 2, "leaf": -0.00282054534 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.0504684448, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00400114153 }, 
+    { "nodeid": 2, "leaf": 0.00436996529 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000723249745 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 134.772369, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00813420024 }, 
+    { "nodeid": 2, "leaf": 0.00305342581 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.48245239, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00584037928 }, 
+    { "nodeid": 2, "leaf": 0.00725512719 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00626357226 },
+  { "nodeid": 0, "leaf": -0.000519074965 },
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 71.2233734, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00245001307 }, 
+    { "nodeid": 2, "leaf": -0.00556506449 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.10723877, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00760658225 }, 
+    { "nodeid": 2, "leaf": -0.00263390201 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00197011558 },
+  { "nodeid": 0, "leaf": 0.000589741569 },
+  { "nodeid": 0, "leaf": -0.0031327568 },
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 285.839172, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00712802215 }, 
+    { "nodeid": 2, "leaf": 0.00522834901 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00408344623 },
+  { "nodeid": 0, "leaf": 0.00058992469 },
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 288.5495, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0109934332 }, 
+    { "nodeid": 2, "leaf": 0.00277912407 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00662611611 },
+  { "nodeid": 0, "leaf": 9.31607938e-05 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.332580566, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0109784137 }, 
+    { "nodeid": 2, "leaf": -0.00754515221 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00494566327 },
+  { "nodeid": 0, "leaf": -0.0011103861 },
+  { "nodeid": 0, "leaf": 0.000978872995 },
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 72.8930359, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00619998481 }, 
+    { "nodeid": 2, "leaf": -0.00249940902 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.211715698, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00482834922 }, 
+    { "nodeid": 2, "leaf": 0.00760843745 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00191111618 },
+  { "nodeid": 0, "leaf": -0.00185531599 },
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 280.874878, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00861575268 }, 
+    { "nodeid": 2, "leaf": 0.00359801366 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.10408783, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0075309705 }, 
+    { "nodeid": 2, "leaf": -0.00324499398 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Eta", "split_condition": -0.0208892822, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00165447569 }, 
+    { "nodeid": 2, "leaf": 0.00826234464 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00143403641 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 132.317612, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00797742512 }, 
+    { "nodeid": 2, "leaf": 0.00410364009 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00366750802 },
+  { "nodeid": 0, "depth": 0, "split": "nVtx", "split_condition": 26, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00327932229 }, 
+    { "nodeid": 2, "leaf": -0.00526334252 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000832505582 },
+  { "nodeid": 0, "leaf": -0.00363091961 },
+  { "nodeid": 0, "leaf": -0.000314703269 },
+  { "nodeid": 0, "leaf": 0.00219337037 },
+  { "nodeid": 0, "leaf": -0.000109203065 },
+  { "nodeid": 0, "leaf": -0.00211625313 },
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.4763093, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00722665014 }, 
+    { "nodeid": 2, "leaf": 0.00405727467 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00217790669 },
+  { "nodeid": 0, "leaf": 0.00212667999 },
+  { "nodeid": 0, "leaf": 0.00153025147 },
+  { "nodeid": 0, "leaf": -0.00177279382 },
+  { "nodeid": 0, "leaf": -0.00135234965 },
+  { "nodeid": 0, "leaf": -1.4132559e-05 },
+  { "nodeid": 0, "leaf": -0.000498188776 },
+  { "nodeid": 0, "leaf": 0.000328291149 },
+  { "nodeid": 0, "leaf": -0.00176184787 },
+  { "nodeid": 0, "leaf": 0.000388733897 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.115386963, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00895041693 }, 
+    { "nodeid": 2, "leaf": -0.000855680439 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.000330805779, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00852073636 }, 
+    { "nodeid": 2, "leaf": 0.00633330317 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.4737854, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00957991648 }, 
+    { "nodeid": 2, "leaf": 0.00639992207 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00135072228 },
+  { "nodeid": 0, "leaf": -0.000207776829 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 114.71875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00553712528 }, 
+    { "nodeid": 2, "leaf": -0.00382302748 }
+  ]},
+  { "nodeid": 0, "leaf": 9.53715935e-05 },
+  { "nodeid": 0, "leaf": -0.000400561054 },
+  { "nodeid": 0, "leaf": 0.00432217633 },
+  { "nodeid": 0, "leaf": -6.22085554e-06 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.111328125, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00791465957 }, 
+    { "nodeid": 2, "leaf": 1.25440747e-05 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000467163103 },
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 299.057983, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00881756004 }, 
+    { "nodeid": 2, "leaf": 0.00442118524 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.654327, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00834160578 }, 
+    { "nodeid": 2, "leaf": -0.00493766367 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.127746582, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00526221329 }, 
+    { "nodeid": 2, "leaf": -0.00312590646 }
+  ]},
+  { "nodeid": 0, "leaf": 7.45822108e-05 },
+  { "nodeid": 0, "leaf": 0.00299854204 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Eta", "split_condition": -0.0975646973, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00685508037 }, 
+    { "nodeid": 2, "leaf": -0.00148365216 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.48070383, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00100339123 }, 
+    { "nodeid": 2, "leaf": 0.0112348087 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00240430282 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.27532959, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00265951967 }, 
+    { "nodeid": 2, "leaf": -0.00508089969 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00559082069 },
+  { "nodeid": 0, "leaf": -0.00422577094 },
+  { "nodeid": 0, "depth": 0, "split": "nVtx", "split_condition": 26, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00368357031 }, 
+    { "nodeid": 2, "leaf": 0.0061382954 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00181407889 },
+  { "nodeid": 0, "leaf": 0.0003408255 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 116.15625, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00556219509 }, 
+    { "nodeid": 2, "leaf": 0.00112868368 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00160153478 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.0792999268, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00457841111 }, 
+    { "nodeid": 2, "leaf": 0.00541741122 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00110749039 },
+  { "nodeid": 0, "leaf": 2.59844601e-05 },
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.52416086, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00441767229 }, 
+    { "nodeid": 2, "leaf": -0.00677519664 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00367062748 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.219161987, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00821285322 }, 
+    { "nodeid": 2, "leaf": 0.00175679894 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.48070383, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0027120288 }, 
+    { "nodeid": 2, "leaf": 0.00675865263 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00123585924 },
+  { "nodeid": 0, "leaf": 0.00446844613 },
+  { "nodeid": 0, "leaf": -0.00514110364 },
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.79795408, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00584902614 }, 
+    { "nodeid": 2, "leaf": 0.0030415759 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000370982423 },
+  { "nodeid": 0, "leaf": 0.000913369353 },
+  { "nodeid": 0, "leaf": -0.00137416425 },
+  { "nodeid": 0, "leaf": -0.00243876688 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 170.237671, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0116684772 }, 
+    { "nodeid": 2, "leaf": -0.000659586571 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00636140397 },
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.48070383, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00290779397 }, 
+    { "nodeid": 2, "leaf": 0.00736360718 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.187850952, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00410091365 }, 
+    { "nodeid": 2, "leaf": -0.0054024756 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000172406653 },
+  { "nodeid": 0, "leaf": -0.00516085653 },
+  { "nodeid": 0, "leaf": 1.73217868e-05 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 114.53125, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.000225047537 }, 
+    { "nodeid": 2, "leaf": 0.00514384732 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.948792, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00951806922 }, 
+    { "nodeid": 2, "leaf": -0.00131296215 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 69.5729904, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00652916403 }, 
+    { "nodeid": 2, "leaf": -0.0049663526 }
+  ]},
+  { "nodeid": 0, "leaf": -5.51051635e-05 },
+  { "nodeid": 0, "leaf": 0.000987936277 },
+  { "nodeid": 0, "leaf": -0.000541945687 },
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.45108032, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00350752077 }, 
+    { "nodeid": 2, "leaf": 0.00342445774 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.730392, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0101194894 }, 
+    { "nodeid": 2, "leaf": -0.00334480987 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000228606717 },
+  { "nodeid": 0, "leaf": -0.00379593717 },
+  { "nodeid": 0, "leaf": 0.00312094344 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 175.918884, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0068615065 }, 
+    { "nodeid": 2, "leaf": -0.000842772017 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00206383457 },
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.48070383, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00298280525 }, 
+    { "nodeid": 2, "leaf": 0.00351868197 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": -0.293792725, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00724440161 }, 
+    { "nodeid": 2, "leaf": -0.00212191045 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.075745, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00469607627 }, 
+    { "nodeid": 2, "leaf": 0.00395429274 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00403740117 },
+  { "nodeid": 0, "leaf": -0.00295730773 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.277770996, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00365686044 }, 
+    { "nodeid": 2, "leaf": -0.00849976484 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00559120951 },
+  { "nodeid": 0, "leaf": 0.00162196334 },
+  { "nodeid": 0, "leaf": -0.00394069077 },
+  { "nodeid": 0, "leaf": -0.00100062299 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.472900391, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0027621456 }, 
+    { "nodeid": 2, "leaf": 0.00439526234 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000478130853 },
+  { "nodeid": 0, "leaf": -0.00179476081 },
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 299.060486, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0047700163 }, 
+    { "nodeid": 2, "leaf": 0.00593666825 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00552268792 },
+  { "nodeid": 0, "leaf": 0.00700795976 },
+  { "nodeid": 0, "leaf": 0.000200280672 },
+  { "nodeid": 0, "leaf": -0.000439555006 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": -0.0254383087, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00480440725 }, 
+    { "nodeid": 2, "leaf": -0.00319594843 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.071991, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00150708284 }, 
+    { "nodeid": 2, "leaf": 0.00674677221 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.0448875427, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00643460499 }, 
+    { "nodeid": 2, "leaf": 0.00521296449 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00223529851 },
+  { "nodeid": 0, "leaf": -0.00339901284 },
+  { "nodeid": 0, "leaf": 0.00391590782 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.0545806885, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.000962934573 }, 
+    { "nodeid": 2, "leaf": 0.00768847018 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 75.1278076, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00466152746 }, 
+    { "nodeid": 2, "leaf": 0.00509099476 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000558424857 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": 0.0833206177, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0078187082 }, 
+    { "nodeid": 2, "leaf": -0.000777219131 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00192057155 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 99.2546997, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0114615429 }, 
+    { "nodeid": 2, "leaf": 0.00399095053 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00260273041 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.14213562, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00810108427 }, 
+    { "nodeid": 2, "leaf": -0.0036847603 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00146687368 },
+  { "nodeid": 0, "leaf": -0.00135622465 },
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 67.6062775, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00684297504 }, 
+    { "nodeid": 2, "leaf": -0.00576789165 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.196395874, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00172644644 }, 
+    { "nodeid": 2, "leaf": 0.00597542431 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000909210416 },
+  { "nodeid": 0, "leaf": -0.00560607063 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": 0.137390137, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00446722237 }, 
+    { "nodeid": 2, "leaf": -0.00413911697 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00203959248 },
+  { "nodeid": 0, "leaf": 0.000982303871 },
+  { "nodeid": 0, "leaf": -0.000300605316 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.121063232, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00572871091 }, 
+    { "nodeid": 2, "leaf": -0.00530018564 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 116.34375, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00711118011 }, 
+    { "nodeid": 2, "leaf": -0.00381077779 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00139366754 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.140136719, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00635725306 }, 
+    { "nodeid": 2, "leaf": -0.00444580754 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 95.8850174, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00997720193 }, 
+    { "nodeid": 2, "leaf": 0.00161328726 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.07309, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00395928137 }, 
+    { "nodeid": 2, "leaf": 0.004976606 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00062895444 },
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.75964594, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00280753942 }, 
+    { "nodeid": 2, "leaf": 0.00434099464 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00458145654 },
+  { "nodeid": 0, "leaf": -0.00106332928 },
+  { "nodeid": 0, "leaf": 0.00315086544 },
+  { "nodeid": 0, "leaf": -0.00204284047 },
+  { "nodeid": 0, "leaf": 0.000227987475 },
+  { "nodeid": 0, "leaf": -0.00251741707 },
+  { "nodeid": 0, "leaf": 0.000884521054 },
+  { "nodeid": 0, "leaf": 0.000868495379 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": 0.0755310059, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00557136303 }, 
+    { "nodeid": 2, "leaf": 0.00280257105 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 176.952271, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00792352203 }, 
+    { "nodeid": 2, "leaf": -0.00397347705 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.518310547, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00875801686 }, 
+    { "nodeid": 2, "leaf": 0.00103080564 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00012472627 },
+  { "nodeid": 0, "leaf": 0.00342123373 },
+  { "nodeid": 0, "leaf": -0.00104870379 },
+  { "nodeid": 0, "leaf": -0.00157337531 },
+  { "nodeid": 0, "leaf": 0.00379070756 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.0460128784, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00671993056 }, 
+    { "nodeid": 2, "leaf": 0.00486477232 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00426888 },
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.48740888, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00150039 }, 
+    { "nodeid": 2, "leaf": 0.00350981089 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00131941587 },
+  { "nodeid": 0, "leaf": 0.00646638684 },
+  { "nodeid": 0, "leaf": -0.00426544109 },
+  { "nodeid": 0, "leaf": -0.000902210013 },
+  { "nodeid": 0, "leaf": -0.00301586976 },
+  { "nodeid": 0, "leaf": 0.000541600748 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 96.1317596, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00514716329 }, 
+    { "nodeid": 2, "leaf": 0.00367314066 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00341397128 },
+  { "nodeid": 0, "leaf": 0.00225461181 },
+  { "nodeid": 0, "leaf": -0.0057368041 },
+  { "nodeid": 0, "leaf": -9.92384139e-06 },
+  { "nodeid": 0, "leaf": -0.00297345361 },
+  { "nodeid": 0, "leaf": -0.00215563667 },
+  { "nodeid": 0, "leaf": -0.00234762672 },
+  { "nodeid": 0, "leaf": -0.000734019035 },
+  { "nodeid": 0, "leaf": 0.0024627177 },
+  { "nodeid": 0, "leaf": 0.000973869523 },
+  { "nodeid": 0, "leaf": 0.00287128543 },
+  { "nodeid": 0, "leaf": 0.00532089639 },
+  { "nodeid": 0, "leaf": -0.00429997034 },
+  { "nodeid": 0, "leaf": -0.00107110059 },
+  { "nodeid": 0, "leaf": -0.00306482706 },
+  { "nodeid": 0, "leaf": 0.000957830925 },
+  { "nodeid": 0, "leaf": -0.00462851534 },
+  { "nodeid": 0, "leaf": -0.00174288347 },
+  { "nodeid": 0, "leaf": 0.00347006368 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 170.212006, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0096118385 }, 
+    { "nodeid": 2, "leaf": -0.00107061327 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00465375278 },
+  { "nodeid": 0, "leaf": 9.0583424e-05 },
+  { "nodeid": 0, "leaf": -0.0033192893 },
+  { "nodeid": 0, "leaf": -0.00145423587 },
+  { "nodeid": 0, "leaf": 0.00350818993 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.0877380371, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00437243283 }, 
+    { "nodeid": 2, "leaf": 0.00395448925 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000755088986 },
+  { "nodeid": 0, "leaf": 0.00235477183 },
+  { "nodeid": 0, "leaf": 0.00275646523 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 128.40506, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00494783465 }, 
+    { "nodeid": 2, "leaf": -0.00245199888 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00280179433 },
+  { "nodeid": 0, "leaf": -0.00330226566 },
+  { "nodeid": 0, "leaf": 0.00072543259 },
+  { "nodeid": 0, "leaf": -0.00046775685 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 98.3720398, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00786462706 }, 
+    { "nodeid": 2, "leaf": 0.00199185079 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.732513, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0066142804 }, 
+    { "nodeid": 2, "leaf": -0.00616738433 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00127696025 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.075745, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.009290752 }, 
+    { "nodeid": 2, "leaf": 0.00687740929 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00307315937 },
+  { "nodeid": 0, "leaf": 0.00285166502 },
+  { "nodeid": 0, "leaf": -0.00103423872 },
+  { "nodeid": 0, "leaf": 0.0017335529 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.019411087, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00629683537 }, 
+    { "nodeid": 2, "leaf": -0.00293597137 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00495371548 },
+  { "nodeid": 0, "leaf": 0.00478719082 },
+  { "nodeid": 0, "leaf": 0.00468691438 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": 0.043762207, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00301318173 }, 
+    { "nodeid": 2, "leaf": 0.00992014166 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.0157985687, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00625465065 }, 
+    { "nodeid": 2, "leaf": -0.0041639898 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000401131954 },
+  { "nodeid": 0, "leaf": -0.00334692164 },
+  { "nodeid": 0, "leaf": 0.000758840702 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.735031, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00903082546 }, 
+    { "nodeid": 2, "leaf": -0.00681430101 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00188968889 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.311248779, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 2.35436255e-06 }, 
+    { "nodeid": 2, "leaf": 0.00883357599 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00307404599 },
+  { "nodeid": 0, "leaf": -0.000103354716 },
+  { "nodeid": 0, "leaf": -0.00130691391 },
+  { "nodeid": 0, "leaf": 0.00651717419 },
+  { "nodeid": 0, "leaf": -0.00137944939 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.0984725952, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00367034692 }, 
+    { "nodeid": 2, "leaf": -0.00451364461 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00216703233 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.169265747, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00787849538 }, 
+    { "nodeid": 2, "leaf": -0.00143945403 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00205626455 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.160095215, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00474251807 }, 
+    { "nodeid": 2, "leaf": -0.00494990731 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00184106408 },
+  { "nodeid": 0, "leaf": -0.0041810926 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 134.854065, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00144594978 }, 
+    { "nodeid": 2, "leaf": 0.00796282478 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000184136647 },
+  { "nodeid": 0, "leaf": 0.00351058203 },
+  { "nodeid": 0, "leaf": 0.000200056602 },
+  { "nodeid": 0, "leaf": -0.00122899457 },
+  { "nodeid": 0, "leaf": 0.00127896562 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.667542, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0045280233 }, 
+    { "nodeid": 2, "leaf": -0.00692216447 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00234012073 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 134.854065, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0100987675 }, 
+    { "nodeid": 2, "leaf": 0.00284045422 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00256453268 },
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.48448801, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00157576008 }, 
+    { "nodeid": 2, "leaf": 0.00351955113 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00259002112 },
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.48448801, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00620089797 }, 
+    { "nodeid": 2, "leaf": 0.0047230511 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00197134097 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 135.954163, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0021767104 }, 
+    { "nodeid": 2, "leaf": 0.00518429978 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00239676447 },
+  { "nodeid": 0, "leaf": 0.00158832269 },
+  { "nodeid": 0, "leaf": 0.0011512239 },
+  { "nodeid": 0, "leaf": -0.00338115916 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.380645752, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00582162431 }, 
+    { "nodeid": 2, "leaf": -0.00282187131 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00207770988 },
+  { "nodeid": 0, "leaf": 0.00212087831 },
+  { "nodeid": 0, "leaf": -0.00151722669 },
+  { "nodeid": 0, "leaf": -0.00239327969 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.620392, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00681105349 }, 
+    { "nodeid": 2, "leaf": -0.00331598124 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 71.6451721, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00646011531 }, 
+    { "nodeid": 2, "leaf": -0.0040204078 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00138794375 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 134.621857, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00626073172 }, 
+    { "nodeid": 2, "leaf": 0.00195421698 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00196521101 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.185195923, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00349908788 }, 
+    { "nodeid": 2, "leaf": -0.00452311663 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00419284869 },
+  { "nodeid": 0, "leaf": 0.00607245835 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.26663208, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00398182729 }, 
+    { "nodeid": 2, "leaf": -0.00285737356 }
+  ]},
+  { "nodeid": 0, "leaf": -9.03367327e-05 },
+  { "nodeid": 0, "leaf": 0.00273955171 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 111.40625, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00326499762 }, 
+    { "nodeid": 2, "leaf": -0.00398948323 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00530101359 },
+  { "nodeid": 0, "leaf": 0.00244614342 },
+  { "nodeid": 0, "leaf": -0.00374046993 },
+  { "nodeid": 0, "leaf": -7.48886741e-05 },
+  { "nodeid": 0, "leaf": -0.00123276701 },
+  { "nodeid": 0, "leaf": -0.0011275633 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.73291, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0125012407 }, 
+    { "nodeid": 2, "leaf": -0.0029655823 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 136.86496, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00904307701 }, 
+    { "nodeid": 2, "leaf": 0.00732534891 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00369187864 },
+  { "nodeid": 0, "leaf": 0.00102209568 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 113.21875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00405235868 }, 
+    { "nodeid": 2, "leaf": -0.00157473935 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 140.389771, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00237976504 }, 
+    { "nodeid": 2, "leaf": 0.00528956112 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000928419118 },
+  { "nodeid": 0, "leaf": -0.00218882062 },
+  { "nodeid": 0, "leaf": 0.00314450054 },
+  { "nodeid": 0, "leaf": -4.38261777e-05 },
+  { "nodeid": 0, "leaf": -0.0073915571 },
+  { "nodeid": 0, "leaf": -0.00373482727 },
+  { "nodeid": 0, "leaf": 0.00163986022 },
+  { "nodeid": 0, "leaf": 0.000664554595 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 118.84375, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00707548717 }, 
+    { "nodeid": 2, "leaf": 0.00241355272 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.48765302, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00863043871 }, 
+    { "nodeid": 2, "leaf": -0.00417233584 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00168157858 },
+  { "nodeid": 0, "leaf": 0.00278189871 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": 0.246383667, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0059081642 }, 
+    { "nodeid": 2, "leaf": 0.00458192965 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.114425659, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00458312174 }, 
+    { "nodeid": 2, "leaf": -0.00464753993 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.0792999268, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00199352298 }, 
+    { "nodeid": 2, "leaf": 0.00678053917 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00273488462 },
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.75439835, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0074957055 }, 
+    { "nodeid": 2, "leaf": -0.00243455009 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.200820923, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00301688281 }, 
+    { "nodeid": 2, "leaf": -0.00555038219 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00405979156 },
+  { "nodeid": 0, "leaf": -0.00221105129 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 96.0308914, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00183171593 }, 
+    { "nodeid": 2, "leaf": 0.00596282631 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000253392995 },
+  { "nodeid": 0, "leaf": 0.00151838851 },
+  { "nodeid": 0, "leaf": -0.00362530234 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Eta", "split_condition": -0.035572052, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00455074292 }, 
+    { "nodeid": 2, "leaf": 0.00470730197 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000298727246 },
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 71.203537, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00628994824 }, 
+    { "nodeid": 2, "leaf": -0.00289293472 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0026474928 },
+  { "nodeid": 0, "leaf": -0.0012584267 },
+  { "nodeid": 0, "leaf": -0.00192456192 },
+  { "nodeid": 0, "leaf": 0.00302732573 },
+  { "nodeid": 0, "leaf": 0.00325991772 },
+  { "nodeid": 0, "leaf": 0.00127515104 },
+  { "nodeid": 0, "leaf": 0.000778006157 },
+  { "nodeid": 0, "leaf": -0.00204766309 },
+  { "nodeid": 0, "leaf": -0.00559965428 },
+  { "nodeid": 0, "leaf": -0.00423483457 },
+  { "nodeid": 0, "leaf": 0.00136832299 },
+  { "nodeid": 0, "leaf": -0.00276099611 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.253417969, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00423569093 }, 
+    { "nodeid": 2, "leaf": 0.00582693703 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.213439941, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00468005845 }, 
+    { "nodeid": 2, "leaf": -0.00418372545 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00358027103 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 172.388535, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00562444422 }, 
+    { "nodeid": 2, "leaf": -0.00109242124 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.32522583, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0040509738 }, 
+    { "nodeid": 2, "leaf": 0.00319802971 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": 0.338470459, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00481091393 }, 
+    { "nodeid": 2, "leaf": -0.00494413357 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00146230625 },
+  { "nodeid": 0, "leaf": 2.46149084e-05 },
+  { "nodeid": 0, "leaf": -0.000424854137 },
+  { "nodeid": 0, "leaf": 0.00158304407 },
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.51006174, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00537447026 }, 
+    { "nodeid": 2, "leaf": 0.00229672878 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.76896954, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00946932938 }, 
+    { "nodeid": 2, "leaf": 0.00349763082 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 109.59375, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00842321943 }, 
+    { "nodeid": 2, "leaf": -0.00363739813 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000524365052 },
+  { "nodeid": 0, "leaf": -0.00102091441 },
+  { "nodeid": 0, "leaf": -0.0029029171 },
+  { "nodeid": 0, "leaf": -0.00220687501 },
+  { "nodeid": 0, "leaf": -0.000333530887 },
+  { "nodeid": 0, "leaf": -5.30513789e-05 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.0454711914, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0049626017 }, 
+    { "nodeid": 2, "leaf": 0.00484733377 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00243581249 },
+  { "nodeid": 0, "leaf": -0.00437473925 },
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 71.0879364, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00685200794 }, 
+    { "nodeid": 2, "leaf": -0.00727809733 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00251500192 },
+  { "nodeid": 0, "leaf": -0.0021157274 },
+  { "nodeid": 0, "leaf": -0.000785867043 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": 0.0349311829, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00285651884 }, 
+    { "nodeid": 2, "leaf": 0.00895196851 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 134.854218, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00611295504 }, 
+    { "nodeid": 2, "leaf": 0.00847839843 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 298.090332, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00617548311 }, 
+    { "nodeid": 2, "leaf": 0.0028982684 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000610390911 },
+  { "nodeid": 0, "leaf": -0.000736982736 },
+  { "nodeid": 0, "leaf": 0.00240208954 },
+  { "nodeid": 0, "leaf": -0.003207325 },
+  { "nodeid": 0, "leaf": 0.00309503381 },
+  { "nodeid": 0, "leaf": -0.000627281261 },
+  { "nodeid": 0, "leaf": 0.00696824118 },
+  { "nodeid": 0, "leaf": -0.000328504946 },
+  { "nodeid": 0, "leaf": -0.000189571321 },
+  { "nodeid": 0, "leaf": 0.000651959737 },
+  { "nodeid": 0, "leaf": -0.00162137952 },
+  { "nodeid": 0, "leaf": 0.000460128853 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 136.845551, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00579603063 }, 
+    { "nodeid": 2, "leaf": 0.00394472666 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00153842999 },
+  { "nodeid": 0, "leaf": -0.000194561828 },
+  { "nodeid": 0, "leaf": 0.00202667923 },
+  { "nodeid": 0, "leaf": -0.0017196876 },
+  { "nodeid": 0, "leaf": 0.000401048688 },
+  { "nodeid": 0, "leaf": 0.0018953993 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.478973389, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00635089679 }, 
+    { "nodeid": 2, "leaf": -0.00282470603 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 69.4524002, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00557969743 }, 
+    { "nodeid": 2, "leaf": 0.00422725268 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00119190093 },
+  { "nodeid": 0, "leaf": 0.000602948188 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.149810791, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00419120817 }, 
+    { "nodeid": 2, "leaf": -0.00482580299 }
+  ]},
+  { "nodeid": 0, "leaf": 0.0038116877 },
+  { "nodeid": 0, "leaf": -0.000329456001 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.270080566, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00479211798 }, 
+    { "nodeid": 2, "leaf": -0.00469869794 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00523064937 },
+  { "nodeid": 0, "leaf": 0.00203968864 },
+  { "nodeid": 0, "leaf": 0.00323228235 },
+  { "nodeid": 0, "leaf": -0.00216254615 },
+  { "nodeid": 0, "leaf": 0.000213368156 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Eta", "split_condition": -0.0715255737, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00499190576 }, 
+    { "nodeid": 2, "leaf": 0.0033270584 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000983095029 },
+  { "nodeid": 0, "leaf": 0.000808520825 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": 0.143814087, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00782005955 }, 
+    { "nodeid": 2, "leaf": -0.00233276677 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00145106029 },
+  { "nodeid": 0, "leaf": -0.00701693958 },
+  { "nodeid": 0, "leaf": -0.00253920164 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.390289307, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00281189405 }, 
+    { "nodeid": 2, "leaf": -0.00555411913 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 175.914703, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00667541986 }, 
+    { "nodeid": 2, "leaf": -0.00350049301 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00271249306 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.142486572, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00599328522 }, 
+    { "nodeid": 2, "leaf": -0.00282629463 }
+  ]},
+  { "nodeid": 0, "leaf": -0.0016086027 },
+  { "nodeid": 0, "leaf": 0.00301155122 },
+  { "nodeid": 0, "leaf": 0.000326870999 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": 0.177688599, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00438839011 }, 
+    { "nodeid": 2, "leaf": 0.00345052499 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000909117574 },
+  { "nodeid": 0, "leaf": -0.000380625803 },
+  { "nodeid": 0, "leaf": 0.00137679838 },
+  { "nodeid": 0, "leaf": 0.00191069092 },
+  { "nodeid": 0, "leaf": -0.00377092138 },
+  { "nodeid": 0, "leaf": -0.00106250576 },
+  { "nodeid": 0, "leaf": -4.74854678e-05 },
+  { "nodeid": 0, "leaf": 0.00137661258 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 176.947296, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00837059692 }, 
+    { "nodeid": 2, "leaf": -0.00327220908 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.180145264, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00576809049 }, 
+    { "nodeid": 2, "leaf": -0.00317949336 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 140.216415, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00887027197 }, 
+    { "nodeid": 2, "leaf": 0.00185380457 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 298.759918, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0101017561 }, 
+    { "nodeid": 2, "leaf": 0.00360756367 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000778069953 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": 0.083190918, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00537863001 }, 
+    { "nodeid": 2, "leaf": 0.00688191317 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00127755268 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.140075684, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00599364424 }, 
+    { "nodeid": 2, "leaf": -0.00237495988 }
+  ]},
+  { "nodeid": 0, "leaf": 0.0013273264 },
+  { "nodeid": 0, "leaf": -0.00179166626 },
+  { "nodeid": 0, "leaf": -0.00412910338 },
+  { "nodeid": 0, "leaf": -0.00162793766 },
+  { "nodeid": 0, "leaf": 0.000423337508 },
+  { "nodeid": 0, "leaf": 0.00251225848 },
+  { "nodeid": 0, "leaf": 0.00266510388 },
+  { "nodeid": 0, "leaf": -0.000642270141 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.166152954, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0102790743 }, 
+    { "nodeid": 2, "leaf": -0.00340786506 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.129867554, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00492173526 }, 
+    { "nodeid": 2, "leaf": 0.00368356914 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00185028475 },
+  { "nodeid": 0, "leaf": -0.000692838861 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.217422485, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0034033414 }, 
+    { "nodeid": 2, "leaf": -0.00523277931 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00193194102 },
+  { "nodeid": 0, "leaf": 0.000708059699 },
+  { "nodeid": 0, "leaf": 5.67799143e-05 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.256286621, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00436291657 }, 
+    { "nodeid": 2, "leaf": 0.0062176357 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.186706543, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.0075836014 }, 
+    { "nodeid": 2, "leaf": -0.00279077515 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00559723284 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.160720825, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00615178468 }, 
+    { "nodeid": 2, "leaf": -0.00348708802 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00393018546 },
+  { "nodeid": 0, "leaf": -0.00162384228 },
+  { "nodeid": 0, "leaf": -0.00244327146 },
+  { "nodeid": 0, "leaf": 0.00227734447 },
+  { "nodeid": 0, "leaf": 0.00240356475 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 93.2732468, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00592362089 }, 
+    { "nodeid": 2, "leaf": 0.00343484315 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00334646367 },
+  { "nodeid": 0, "leaf": 0.000350601971 },
+  { "nodeid": 0, "leaf": -0.000851295365 },
+  { "nodeid": 0, "leaf": -0.00318654557 },
+  { "nodeid": 0, "leaf": -0.00233176514 },
+  { "nodeid": 0, "leaf": 0.00129049795 },
+  { "nodeid": 0, "leaf": -0.00243504206 },
+  { "nodeid": 0, "leaf": -0.0031056162 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 93.1522446, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00418691803 }, 
+    { "nodeid": 2, "leaf": 0.00236680126 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000882176508 },
+  { "nodeid": 0, "leaf": -0.00122896465 },
+  { "nodeid": 0, "leaf": 6.86373023e-05 },
+  { "nodeid": 0, "leaf": -0.00142605382 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 134.854065, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00546314474 }, 
+    { "nodeid": 2, "leaf": 0.00689300895 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00239998242 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.213485718, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00935581513 }, 
+    { "nodeid": 2, "leaf": 0.00029579518 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.473510742, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00796923228 }, 
+    { "nodeid": 2, "leaf": -0.00223906268 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00184699625 },
+  { "nodeid": 0, "leaf": 0.000223439056 },
+  { "nodeid": 0, "leaf": 0.00403406145 },
+  { "nodeid": 0, "leaf": -0.00271690777 },
+  { "nodeid": 0, "leaf": -0.00053350575 },
+  { "nodeid": 0, "leaf": 0.00371908327 },
+  { "nodeid": 0, "leaf": -0.00032044563 },
+  { "nodeid": 0, "leaf": 0.000866629009 },
+  { "nodeid": 0, "leaf": 0.00201645214 },
+  { "nodeid": 0, "leaf": 0.00177100801 },
+  { "nodeid": 0, "leaf": -0.000782635412 },
+  { "nodeid": 0, "leaf": -0.00156191573 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.264984131, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0012536482 }, 
+    { "nodeid": 2, "leaf": 0.00673240656 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00134186412 },
+  { "nodeid": 0, "leaf": -0.000178809045 },
+  { "nodeid": 0, "leaf": -0.00113048719 },
+  { "nodeid": 0, "leaf": -0.00170484465 },
+  { "nodeid": 0, "leaf": 0.00206517917 },
+  { "nodeid": 0, "leaf": 0.00425284356 },
+  { "nodeid": 0, "leaf": -0.000374150201 },
+  { "nodeid": 0, "leaf": -0.00077143521 },
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 133.07309, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00285298401 }, 
+    { "nodeid": 2, "leaf": 0.00767954998 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000132454268 },
+  { "nodeid": 0, "leaf": 0.000286583498 },
+  { "nodeid": 0, "leaf": -0.00250047375 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.264129639, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00145506777 }, 
+    { "nodeid": 2, "leaf": 0.00704108737 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "nVtx", "split_condition": 26, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00425694929 }, 
+    { "nodeid": 2, "leaf": 0.00463384809 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.647858, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00780588808 }, 
+    { "nodeid": 2, "leaf": -0.00180497603 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00200325157 },
+  { "nodeid": 0, "leaf": -0.0015643076 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.0499534607, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00148591783 }, 
+    { "nodeid": 2, "leaf": 0.00638868613 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000713709625 },
+  { "nodeid": 0, "leaf": 0.00353120547 },
+  { "nodeid": 0, "leaf": -0.00422919495 },
+  { "nodeid": 0, "depth": 0, "split": "llDphi", "split_condition": 2.48351145, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0044717812 }, 
+    { "nodeid": 2, "leaf": 0.00566799287 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00316596357 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 174.594223, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00833458919 }, 
+    { "nodeid": 2, "leaf": 0.00164769182 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 136.003342, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00812854245 }, 
+    { "nodeid": 2, "leaf": 0.00373094808 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llPt", "split_condition": 137.698547, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00209771376 }, 
+    { "nodeid": 2, "leaf": -0.00430226745 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00444734748 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Eta", "split_condition": -0.182998657, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00616399571 }, 
+    { "nodeid": 2, "leaf": -0.00494966004 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00138177886 },
+  { "nodeid": 0, "leaf": 0.00101458095 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 175.914703, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00277347467 }, 
+    { "nodeid": 2, "leaf": -0.00426518079 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00266998797 },
+  { "nodeid": 0, "leaf": -0.00434210664 },
+  { "nodeid": 0, "leaf": 0.00234945607 },
+  { "nodeid": 0, "leaf": -0.00182050804 },
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 72.8033829, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.000957423123 }, 
+    { "nodeid": 2, "leaf": 0.00547889387 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00698882202 },
+  { "nodeid": 0, "leaf": -0.00374331162 },
+  { "nodeid": 0, "leaf": 0.00302748289 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.140136719, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00692362245 }, 
+    { "nodeid": 2, "leaf": -0.00186503062 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00590641377 },
+  { "nodeid": 0, "leaf": 0.00406837463 },
+  { "nodeid": 0, "leaf": 0.00237321784 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.247070313, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00227484317 }, 
+    { "nodeid": 2, "leaf": 0.00565928966 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 175.448395, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00417412212 }, 
+    { "nodeid": 2, "leaf": -0.00189217727 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 113.09375, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00454531517 }, 
+    { "nodeid": 2, "leaf": -0.00466925045 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00123245479 },
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 67.6842041, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00885215495 }, 
+    { "nodeid": 2, "leaf": -0.00203531003 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Eta", "split_condition": -0.213485718, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00255611236 }, 
+    { "nodeid": 2, "leaf": -0.00518068671 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.0811157227, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00327708037 }, 
+    { "nodeid": 2, "leaf": 0.00392421149 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00101070898 },
+  { "nodeid": 0, "leaf": -0.00341630075 },
+  { "nodeid": 0, "leaf": 0.00465290016 },
+  { "nodeid": 0, "leaf": -0.00335134775 },
+  { "nodeid": 0, "leaf": -0.00463126833 },
+  { "nodeid": 0, "leaf": -0.000869510288 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 110.71875, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00789913349 }, 
+    { "nodeid": 2, "leaf": -0.000397483178 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "jet1Pt", "split_condition": 103.53125, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00487508113 }, 
+    { "nodeid": 2, "leaf": -0.00820633397 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00121882104 },
+  { "nodeid": 0, "leaf": -0.00161005778 },
+  { "nodeid": 0, "leaf": -0.00455638953 },
+  { "nodeid": 0, "leaf": 0.000519927475 },
+  { "nodeid": 0, "leaf": -0.000453623419 },
+  { "nodeid": 0, "leaf": -0.00359346671 },
+  { "nodeid": 0, "leaf": 0.00124491192 },
+  { "nodeid": 0, "leaf": 0.001192417 },
+  { "nodeid": 0, "leaf": -0.000851938501 },
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 69.5831375, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00954136997 }, 
+    { "nodeid": 2, "leaf": -1.38695614e-05 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00672379369 },
+  { "nodeid": 0, "leaf": 0.0024798247 },
+  { "nodeid": 0, "leaf": -0.00530372839 },
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 278.307373, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00581031805 }, 
+    { "nodeid": 2, "leaf": -0.00275088218 }
+  ]},
+  { "nodeid": 0, "leaf": 0.0040315818 },
+  { "nodeid": 0, "leaf": -0.00163308659 },
+  { "nodeid": 0, "leaf": 0.000323184271 },
+  { "nodeid": 0, "leaf": -0.00472126016 },
+  { "nodeid": 0, "leaf": 0.00152900664 },
+  { "nodeid": 0, "leaf": 0.000489267288 },
+  { "nodeid": 0, "leaf": 0.000833801401 },
+  { "nodeid": 0, "leaf": -0.000717496383 },
+  { "nodeid": 0, "leaf": -0.00412419531 },
+  { "nodeid": 0, "leaf": -0.00322911353 },
+  { "nodeid": 0, "leaf": -0.00131038041 },
+  { "nodeid": 0, "leaf": -0.000768852537 },
+  { "nodeid": 0, "leaf": -0.00117676368 },
+  { "nodeid": 0, "leaf": -0.00291312276 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": 0.0882492065, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00619942602 }, 
+    { "nodeid": 2, "leaf": 0.00332196499 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00647040131 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": -0.216964722, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00566833001 }, 
+    { "nodeid": 2, "leaf": -0.00281130103 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "Met", "split_condition": 72.3156891, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00416607689 }, 
+    { "nodeid": 2, "leaf": -0.00304228929 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep1Phi", "split_condition": 0.0334815979, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.000276427163 }, 
+    { "nodeid": 2, "leaf": 0.00605332712 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00293066981 },
+  { "nodeid": 0, "depth": 0, "split": "lep1Pt", "split_condition": 176.85788, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00691966992 }, 
+    { "nodeid": 2, "leaf": -0.0010970789 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00150389504 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 99.2546616, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00423131837 }, 
+    { "nodeid": 2, "leaf": 0.00687657762 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "lep2Phi", "split_condition": -0.376678467, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00988578983 }, 
+    { "nodeid": 2, "leaf": -0.00144064135 }
+  ]},
+  { "nodeid": 0, "leaf": -0.00137417577 },
+  { "nodeid": 0, "leaf": 0.00226879166 },
+  { "nodeid": 0, "leaf": 0.0020836636 },
+  { "nodeid": 0, "leaf": -0.00176111935 },
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.76888084, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -1.84685341e-05 }, 
+    { "nodeid": 2, "leaf": 0.00753704645 }
+  ]},
+  { "nodeid": 0, "leaf": -6.00391795e-05 },
+  { "nodeid": 0, "leaf": 0.000806701486 },
+  { "nodeid": 0, "leaf": 2.05010492e-05 },
+  { "nodeid": 0, "leaf": -0.00158211228 },
+  { "nodeid": 0, "leaf": 0.00100507471 },
+  { "nodeid": 0, "leaf": 0.00130751438 },
+  { "nodeid": 0, "depth": 0, "split": "jet1Phi", "split_condition": 0.0880737305, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.0043371357 }, 
+    { "nodeid": 2, "leaf": 0.00401627598 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00341709098 },
+  { "nodeid": 0, "leaf": 0.00145689794 },
+  { "nodeid": 0, "leaf": 0.001219025 },
+  { "nodeid": 0, "leaf": -0.00663538603 },
+  { "nodeid": 0, "leaf": -0.00059754838 },
+  { "nodeid": 0, "leaf": 0.00350700342 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": 0.00757837296, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00290015782 }, 
+    { "nodeid": 2, "leaf": 0.00734485965 }
+  ]},
+  { "nodeid": 0, "depth": 0, "split": "llDr", "split_condition": 2.71469975, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00797587261 }, 
+    { "nodeid": 2, "leaf": -0.0032577489 }
+  ]},
+  { "nodeid": 0, "leaf": 0.000809446326 },
+  { "nodeid": 0, "depth": 0, "split": "llM", "split_condition": 288.427185, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00961220637 }, 
+    { "nodeid": 2, "leaf": 0.00195620419 }
+  ]},
+  { "nodeid": 0, "leaf": 0.0033918845 },
+  { "nodeid": 0, "leaf": 0.00657606311 },
+  { "nodeid": 0, "leaf": -0.00426355097 },
+  { "nodeid": 0, "leaf": 0.000138521718 },
+  { "nodeid": 0, "leaf": -0.00222082902 },
+  { "nodeid": 0, "leaf": -0.00258050347 },
+  { "nodeid": 0, "leaf": -0.00151482201 },
+  { "nodeid": 0, "leaf": -0.000251137448 },
+  { "nodeid": 0, "leaf": -0.00349226943 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Pt", "split_condition": 96.1665649, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": -0.00544756278 }, 
+    { "nodeid": 2, "leaf": 0.00409064721 }
+  ]},
+  { "nodeid": 0, "leaf": 0.00230008317 },
+  { "nodeid": 0, "depth": 0, "split": "MetPhi", "split_condition": 0.334259033, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00421598321 }, 
+    { "nodeid": 2, "leaf": -0.00850659236 }
+  ]},
+  { "nodeid": 0, "leaf": -0.000349843991 },
+  { "nodeid": 0, "leaf": 0.00124447886 },
+  { "nodeid": 0, "depth": 0, "split": "lep2Eta", "split_condition": -0.246139526, "yes": 1, "no": 2, "missing": 1 , "children": [
+    { "nodeid": 1, "leaf": 0.00531311659 }, 
+    { "nodeid": 2, "leaf": -0.00531756878 }
+  ]},
+  { "nodeid": 0, "leaf": -0.003485678 },
+  { "nodeid": 0, "leaf": 0.00179739331 },
+  { "nodeid": 0, "leaf": -0.000823793001 },
+  { "nodeid": 0, "leaf": -5.82902248e-05 },
+  { "nodeid": 0, "leaf": -0.00330343028 },
+  { "nodeid": 0, "leaf": 0.00195768406 },
+  { "nodeid": 0, "leaf": -0.00482475013 }
+]

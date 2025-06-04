@@ -1,0 +1,124 @@
+#!/bin/bash
+
+# Check if exactly two parameters are provided
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <param1> <param2>"
+    exit 1
+fi
+
+# Parameters from command-line arguments
+PARAM1=$1
+PARAM2=$2
+
+# Define other parameters and their initial values
+declare -A PARAM_VALUES=(
+    ["r"]=1
+    ["k_ctlT"]=0
+    ["k_cQlM"]=0
+    ["k_ctlS"]=0
+    ["k_cQe"]=0
+    ["k_cte"]=0
+    ["k_ctl"]=0
+)
+
+declare -A PARAMETER_RANGES=(
+  ["k_ctlT"]="-0.15,0.15"
+  ["k_cQlM"]="-0.15,0.15"
+  ["k_ctlS"]="-0.15,0.15"
+  ["k_cQe"]="-0.15,0.15"
+  ["k_cte"]="-0.15,0.15"
+  ["k_ctl"]="-0.15,0.15"
+)
+
+
+# Arguments for the combine command
+MODEL_FILE="model_test.root"
+OUTPUT_NAME="${PARAM1}_${PARAM2}"
+MASS=125
+POINTS=1000
+
+# Create setParameters and setParameterRanges strings
+SET_PARAMETERS=""
+PARAMETER_RANGES=""
+FREEZE_PARAMETERS=""
+
+# Loop through parameters to construct the setParameters and setParameterRanges strings
+for param in "${!PARAM_VALUES[@]}"; do
+    # Build setParameters string
+    SET_PARAMETERS+="$param=${PARAM_VALUES[$param]},"
+    
+    # Build setParameterRanges string
+    if [[ -n "${PARAM_RANGES[$param]}" ]]; then
+        PARAMETER_RANGES+="$param=${PARAM_RANGES[$param]}:"
+    fi
+done
+
+# Remove trailing commas/colons
+SET_PARAMETERS=${SET_PARAMETERS%,}
+PARAMETER_RANGES=${PARAMETER_RANGES%:}
+
+# Define frozen parameters (all except the two being scanned)
+for param in "${!PARAM_VALUES[@]}"; do
+    if [[ "$param" != "$PARAM1" && "$param" != "$PARAM2" ]]; then
+        FREEZE_PARAMETERS+="$param,"
+    fi
+done
+FREEZE_PARAMETERS=${FREEZE_PARAMETERS%,}
+
+# Print debug info
+echo "Set Parameters: $SET_PARAMETERS"
+echo "Parameter Ranges: $PARAMETER_RANGES"
+echo "Frozen Parameters: $FREEZE_PARAMETERS"
+
+# Run combine with the specified parameters
+combine -M MultiDimFit \
+    --algo=grid \
+    --points $POINTS \
+    --verbose 1 \
+    -m $MASS \
+    -t -1 \
+    -n $OUTPUT_NAME \
+    -d $MODEL_FILE \
+    -P $PARAM1 \
+    -P $PARAM2 \
+    --floatOtherPOIs 1 \
+    --setParameters "$SET_PARAMETERS" \
+    --setParameterRanges "$PARAMETER_RANGES" \
+    --freezeParameters "$FREEZE_PARAMETERS"
+
+echo "combine -M MultiDimFit \
+    --algo=grid \
+    --points ${POINTS} \
+    --verbose 1 \
+    -m ${MASS} \
+    -t -1 \
+    -n ${OUTPUT_NAME} \
+    -d ${MODEL_FILE} \
+    -P ${PARAM1} \
+    -P ${PARAM2} \
+    --floatOtherPOIs 1 \
+    --setParameters \"${SET_PARAMETERS}\" \
+    --setParameterRanges \"${PARAMETER_RANGES}\" \
+    --freezeParameters \"${FREEZE_PARAMETERS}\""
+
+
+python $HOME/AAC/CMSSW_10_2_13/src/HiggsAnalysis/AnalyticAnomalousCoupling/scripts/mkEFTScan.py \
+    higgsCombine${OUTPUT_NAME}.MultiDimFit.mH125.root \
+    -p $PARAM1 $PARAM2 \
+    -maxNLL 10 \
+    -lumi 138 \
+    -cms \
+    -preliminary \
+    -ylabel "${PARAM2} [TeV^{-2}]" \
+    -o "finalOutput/2DScan_${OUTPUT_NAME}_asimov"
+
+echo "python \$HOME/AAC/CMSSW_10_2_13/src/HiggsAnalysis/AnalyticAnomalousCoupling/scripts/mkEFTScan.py \
+    higgsCombine${OUTPUT_NAME}.MultiDimFit.mH125.root \
+    -p ${PARAM1} ${PARAM2} \
+    -maxNLL 10 \
+    -lumi 138 \
+    -cms \
+    -preliminary \
+    -ylabel \"${PARAM2} [TeV^{-2}]\" \
+    -o \"output/2DScan_${OUTPUT_NAME}\""
+

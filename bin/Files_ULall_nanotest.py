@@ -1,0 +1,55 @@
+import sys 
+import os 
+import subprocess 
+import readline 
+import string 
+
+UL17={
+"SingleMuon_D_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/SingleMuon_D_UL2017'], 'data', 'SingleMuon', 'UL17_data', 'D', '1', '41.53', '5606603', '1', '1'],
+"MuonEG_C_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/MuonEG_C_UL2017'], 'data', 'MuonEG', 'UL17_data', 'C', '1', '41.53', '1557115', '1', '1'],
+"SingleElectron_C_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/SingleElectron_C_UL2017'], 'data', 'SingleElectron', 'UL17_data', 'C', '1', '41.53', '8511029', '1', '1'],
+"UL17_ZGToLLG":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p3/TTbarPowheg_ZG/v1/UL17_ZGToLLG'], 'mc', 'none', 'UL17_mc', 'none', '1', '41.53', '11995444', '1', '1'],
+"DoubleMuon_C_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/DoubleMuon_C_UL2017'], 'data', 'DoubleMuon', 'UL17_data', 'C', '1', '41.53', '13606633', '1', '1'],
+"SingleMuon_E_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/SingleMuon_E_UL2017'], 'data', 'SingleMuon', 'UL17_data', 'E', '1', '41.53', '11952556', '1', '1'],
+"UL17_DY50":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_DY50'], 'mc', 'none', 'UL17_mc', 'none', '6077.22', '41.53', '59073318', '1', '1'],
+"UL17_ST_top_t_channel":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_ST_top_t_channel'], 'mc', 'none', 'UL17_mc', 'none', '1', '41.53', '1588688', '1', '1'],
+"UL17_WWZ_4F":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_WWZ_4F'], 'mc', 'none', 'UL17_mc', 'none', '0.1651', '41.53', '18215', '1', '1'],
+"DoubleEG_B_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/DoubleEG_B_UL2017'], 'data', 'DoubleEG', 'UL17_data', 'B', '1', '41.53', '3778066', '1', '1'],
+"UL17_TTZToLLNuNu_M_10":[['awightma/skims/mc/new-lepMVA-v2/central_sgnl/FullRun2/v1/UL17_TTZToLLNuNu_M_10'], 'mc', 'none', 'UL17_mc', 'none', '0.2529', '41.53', '3960744', '1', '1'],
+"SingleElectron_F_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/SingleElectron_F_UL2017'], 'data', 'SingleElectron', 'UL17_data', 'F', '1', '41.53', '8911331', '1', '1'],
+"SingleMuon_B_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/SingleMuon_B_UL2017'], 'data', 'SingleMuon', 'UL17_data', 'B', '1', '41.53', '7539794', '1', '1'],
+"UL17_TTTo2L2Nu":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p3/TTbarPowheg_ZG/v1/UL17_TTTo2L2Nu'], 'mc', 'none', 'UL17_mc', 'none', '87.31', '41.53', '46503356', '1', '1'],
+"DoubleMuon_F_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/DoubleMuon_F_UL2017'], 'data', 'DoubleMuon', 'UL17_data', 'F', '1', '41.53', '19699439', '1', '1'],
+"MuonEG_B_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/MuonEG_B_UL2017'], 'data', 'MuonEG', 'UL17_data', 'B', '1', '41.53', '673548', '1', '1'],
+"SingleElectron_D_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/SingleElectron_D_UL2017'], 'data', 'SingleElectron', 'UL17_data', 'D', '1', '41.53', '3567793', '1', '1'],
+"SingleElectron_E_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/SingleElectron_E_UL2017'], 'data', 'SingleElectron', 'UL17_data', 'E', '1', '41.53', '7137090', '1', '1'],
+"DoubleMuon_D_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/DoubleMuon_D_UL2017'], 'data', 'DoubleMuon', 'UL17_data', 'D', '1', '41.53', '6169355', '1', '1'],
+"UL17_DY10to50":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_DY10to50'], 'mc', 'none', 'UL17_mc', 'none', '18610', '41.53', '3812266', '1', '1'],
+"DoubleMuon_E_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/DoubleMuon_E_UL2017'], 'data', 'DoubleMuon', 'UL17_data', 'E', '1', '41.53', '13786758', '1', '1'],
+"DoubleEG_C_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/DoubleEG_C_UL2017'], 'data', 'DoubleEG', 'UL17_data', 'C', '1', '41.53', '8072455', '1', '1'],
+"MuonEG_E_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/MuonEG_E_UL2017'], 'data', 'MuonEG', 'UL17_data', 'E', '1', '41.53', '1449838', '1', '1'],
+"UL17_ST_antitop_t_channel":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_ST_antitop_t_channel'], 'mc', 'none', 'UL17_mc', 'none', '1', '41.53', '877843', '1', '1'],
+"UL17_tW":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_tW'], 'mc', 'none', 'UL17_mc', 'none', '19.47', '41.53', '351534', '1', '1'],
+"UL17_WJetsToLNu":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_WJetsToLNu'], 'mc', 'none', 'UL17_mc', 'none', '61526.7', '41.53', '224615', '1', '1'],
+"UL17_tttt":[['awightma/skims/mc/new-lepMVA-v2/central_sgnl/FullRun2/v1/UL17_tttt'], 'mc', 'none', 'UL17_mc', 'none', '1', '41.53', '2508190', '1', '1'],
+"UL17_ST_top_s_channel":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_ST_top_s_channel'], 'mc', 'none', 'UL17_mc', 'none', '1', '41.53', '426638', '1', '1'],
+"MuonEG_D_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/MuonEG_D_UL2017'], 'data', 'MuonEG', 'UL17_data', 'D', '1', '41.53', '723430', '1', '1'],
+"UL17_ttHnobb":[['awightma/skims/mc/new-lepMVA-v2/central_sgnl/FullRun2/v1/UL17_ttHnobb'], 'mc', 'none', 'UL17_mc', 'none', '1', '41.53', '1675197', '1', '1'],
+"UL17_tbarW":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_tbarW'], 'mc', 'none', 'UL17_mc', 'none', '19.47', '41.53', '352383', '1', '1'],
+"UL17_TTWJetsToLNu":[['awightma/skims/mc/new-lepMVA-v2/central_sgnl/FullRun2/v1/UL17_TTWJetsToLNu'], 'mc', 'none', 'UL17_mc', 'none', '0.2043', '41.53', '1938139', '1', '1'],
+"UL17_WWW_4F":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_WWW_4F'], 'mc', 'none', 'UL17_mc', 'none', '0.2086', '41.53', '1054693', '1', '1'],
+"UL17_tZq":[['awightma/skims/mc/new-lepMVA-v2/central_sgnl/tZqPowheg/v1/UL17_tZq'], 'mc', 'none', 'UL17_mc', 'none', '1', '41.53', '5083490', '1', '1'],
+"UL17_WZZ":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_WZZ'], 'mc', 'none', 'UL17_mc', 'none', '1', '41.53', '1153420', '1', '1'],
+"SingleMuon_F_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/SingleMuon_F_UL2017'], 'data', 'SingleMuon', 'UL17_data', 'F', '1', '41.53', '17668917', '1', '1'],
+"MuonEG_F_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/MuonEG_F_UL2017'], 'data', 'MuonEG', 'UL17_data', 'F', '1', '41.53', '1952493', '1', '1'],
+"DoubleMuon_B_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/DoubleMuon_B_UL2017'], 'data', 'DoubleMuon', 'UL17_data', 'B', '1', '41.53', '6865077', '1', '1'],
+"SingleElectron_B_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/SingleElectron_B_UL2017'], 'data', 'SingleElectron', 'UL17_data', 'B', '1', '41.53', '3659025', '1', '1'],
+"UL17_ZZZ":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p1/FullRun2/v2/UL17_ZZZ'], 'mc', 'none', 'UL17_mc', 'none', '0.01398', '41.53', '1338066', '1', '1'],
+"DoubleEG_D_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/DoubleEG_D_UL2017'], 'data', 'DoubleEG', 'UL17_data', 'D', '1', '41.53', '3421612', '1', '1'],
+"DoubleEG_E_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/DoubleEG_E_UL2017'], 'data', 'DoubleEG', 'UL17_data', 'E', '1', '41.53', '6847513', '1', '1'],
+"SingleMuon_C_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/SingleMuon_C_UL2017'], 'data', 'SingleMuon', 'UL17_data', 'C', '1', '41.53', '13375803', '1', '1'],
+"DoubleEG_F_UL2017":[['awightma/skims/data/NAOD_ULv9_new-lepMVA-v2/FullRun2/v3/DoubleEG_F_UL2017'], 'data', 'DoubleEG', 'UL17_data', 'F', '1', '41.53', '8641824', '1', '1'],
+"UL17_TTToSemiLeptonic":[['awightma/skims/mc/new-lepMVA-v2/central_bkgd_p3/TTbarPowheg_ZG/v1/UL17_TTToSemiLeptonic'], 'mc', 'none', 'UL17_mc', 'none', '1', '41.53', '13506483', '1', '1'],
+
+ 
+}

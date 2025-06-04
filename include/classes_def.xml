@@ -1,0 +1,6 @@
+<lcgdict>
+  <class name="WCPoint"/>
+  <class name="WCFit"/>
+  <class name="TH1EFT"/>
+  <class name="TH2EFT"/>
+</lcgdict>
